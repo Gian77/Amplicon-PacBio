@@ -1,0 +1,27 @@
+#!/bin/bash --login
+
+#SBATCH --time=01:00:00      
+#SBATCH --ntasks=1           
+#SBATCH --cpus-per-task=10   
+#SBATCH --mem=16G   
+#SBATCH --job-name  md5sum
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+
+cores="$SLURM_CPUS_PER_TASK"
+RAM="$SLURM_MEM_PER_NODE"
+
+cd data_fastq/
+
+echo -e "\n===== FastQC quality... ======\n"
+
+cat *.fastq > reads.fastq
+
+conda activate fastqc
+fastqc ./reads.fastq
+conda deactivate
+
+rm reads.fastq
+
+scontrol show job $SLURM_JOB_ID 

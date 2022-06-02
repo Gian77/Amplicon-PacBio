@@ -1,0 +1,38 @@
+#!/bin/bash --login
+
+#SBATCH --time=01:00:00      
+#SBATCH --ntasks=1           
+#SBATCH --cpus-per-task=10   
+#SBATCH --mem=16G   
+#SBATCH --job-name  bam2fastq
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+
+cores="$SLURM_CPUS_PER_TASK"
+RAM="$SLURM_MEM_PER_NODE"
+
+mkdir ../stats
+cd ../data_fastq/
+
+echo -e "\n====== Convert .bam to .fastq using bbmap =====\n"
+# Convert files using bbmap. Quality form PAcbio reads is recoded into illumina standards
+# Have a look here: https://www.seqanswers.com/forum/sequencing-technologies-companies/pacific-biosciences/42623-pac-bio-fastq-file-quality-score-encoding?t=48036
+
+conda activate bbmap
+for file in *.bam
+do
+   reformat.sh in=$file out=${file%.*}.fastq
+done
+conda deactivate bbmap
+
+# save read counts into file Notice the \t to divide columns.
+for i in *.fastq
+   do 
+   echo -e "$i\t`grep -c "^+$" $i`"
+done > ../stats/readCounts.txt
+
+# add headers.
+sed -i '1i Name\tCounts' ../stats/readCounts.txt
+
+scontrol show job $SLURM_JOB_ID 
