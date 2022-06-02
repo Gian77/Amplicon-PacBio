@@ -1,6 +1,9 @@
 # Folders
-
-
-
+data_fastq/
+original/
+raw_data/
+renamed/
+stats/
+test/
 
 # Files
