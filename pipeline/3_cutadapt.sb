@@ -4,7 +4,7 @@
 #SBATCH --ntasks=2           
 #SBATCH --cpus-per-task=20   
 #SBATCH --mem=32G   
-#SBATCH --job-name  strip
+#SBATCH --job-name  cutadapt
 #SBACTH -A shade-cole-bonito
 
 cd ${SLURM_SUBMIT_DIR}
@@ -68,9 +68,9 @@ conda deactivate
 
 echo -e "\n====== Read counts =====\n"
 for fastq in *_trim.fastq                                                                           
-do echo "$fastq\t`grep -c "^+$" $fastq`" 
+do echo -e "$fastq\t`grep -c "^+$" $fastq`" 
 done > /mnt/home/benucci/Amplicon-PacBio/stats/stripped.counts
-sed -i '1i Name\tCounts' /mnt/home/benucci/Amplicon-PacBio//stats/stripped.counts
+sed -i '1i Name\tCounts' /mnt/home/benucci/Amplicon-PacBio/stats/stripped.counts
 cat /mnt/home/benucci/Amplicon-PacBio/stats/stripped.counts >> /mnt/home/benucci/Amplicon-PacBio/stats/readCounts.txt
 
 echo -e "\n====== Sbatch log ========\n"
@@ -78,6 +78,6 @@ scontrol show job $SLURM_JOB_ID
 
 scriptname=$(basename "$0")
 cp /mnt/home/benucci/Amplicon-PacBio/pipeline/slurm* \
-/mnt/home/benucci/Amplicon-PacBio/stats/$scriptname.slurm
-rm /mnt/home/benucci/Amplicon-PacBio/pipeline/slurm*
+/mnt/home/benucci/Amplicon-PacBio/stats/cutadapt.slurm
+#rm /mnt/home/benucci/Amplicon-PacBio/pipeline/slurm*
 

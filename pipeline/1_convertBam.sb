@@ -29,7 +29,7 @@ done
 conda deactivate bbmap
 
 echo -e "\n====== Read counts =====\n"
-# save read counts into file Notice the \t to divide columns.
+# save read counts into file using echo -e and the \t to divide columns.
 for i in *.fastq
    do 
    echo -e "$i\t`grep -c "^+$" $i`"
