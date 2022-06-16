@@ -4,5 +4,8 @@ original/
 raw_data/
 renamed/
 testing/
+stripped/
 
 # Files
+pipeline/slurm-*
+code/primerStrip.sb
