@@ -6,6 +6,9 @@ renamed/
 testing/
 stripped/
 
+# just for now
+pipeline/
+
 # Files
 pipeline/slurm-*
 code/primerStrip.sb

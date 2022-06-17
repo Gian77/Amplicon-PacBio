@@ -27,6 +27,5 @@ rm reads.fastq
 echo -e "\n====== Sbatch log ========\n"
 scontrol show job $SLURM_JOB_ID
 cp mnt/home/benucci/Amplicon-PacBio/stats/pipeline/slurm* \
-mnt/home/benucci/Amplicon-PacBio/stats/qualityCheck.slurm
-
-rm mnt/home/benucci/Amplicon-PacBio/stats/pipeline/slurm*
+mnt/home/benucci/Amplicon-PacBio/stats/fastqc.slurm
+#rm mnt/home/benucci/Amplicon-PacBio/stats/pipeline/slurm*
