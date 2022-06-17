@@ -7,7 +7,7 @@ testing/
 stripped/
 
 # just for now
-pipeline/
+# pipeline/
 
 # Files
 pipeline/slurm-*
