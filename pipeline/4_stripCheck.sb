@@ -1,0 +1,31 @@
+#!/bin/bash --login
+
+#SBATCH --time=00:20:00      
+#SBATCH --ntasks=1           
+#SBATCH --cpus-per-task=10   
+#SBATCH --mem=16G   
+#SBATCH --job-name  stripCheck
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM="$SLURM_MEM_PER_NODE"
+
+echo -e "\n==== Paths, variables, links ====\n"
+echo -e "cd /mnt/home/benucci/Amplicon-PacBio/stripped/"
+cd /mnt/home/benucci/Amplicon-PacBio/stripped/
+
+echo -e "\n======= seqtk, pooling and sampling ==========\n"
+cat /mnt/home/benucci/Amplicon-PacBio/stripped/*trim.fastq > /mnt/home/benucci/Amplicon-PacBio/stripped/pooled.fastq
+conda activate seqtk 
+seqtk
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/stripped/pooled.fastq 3000 > /mnt/home/benucci/Amplicon-PacBio/stripped/pooled_3000.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/stripped/pooled_3000.fastq > /mnt/home/benucci/Amplicon-PacBio/stripped/pooled_3000.fasta
+conda deactivate
+
+echo -e "\n====== Sbatch log ========\n"
+scontrol show job $SLURM_JOB_ID 
+cp /mnt/home/benucci/Amplicon-PacBio/pipeline/slurm* \
+/mnt/home/benucci/Amplicon-PacBio/stats/stripCheck.slurm
+#rm /mnt/home/benucci/Amplicon-PacBio/pipeline/slurm*
+

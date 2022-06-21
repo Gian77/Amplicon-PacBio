@@ -1,0 +1,40 @@
+#!/bin/bash --login
+
+#SBATCH --time=16:00:00    
+#SBATCH --ntasks=2         
+#SBATCH --cpus-per-task=20 
+#SBATCH --mem=64G         
+#SBATCH --job-name unoise
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+
+
+# UNOISE3 ESV -zero radius OTUs
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+-threads $SLURM_CPUS_PER_TASK \
+-unoise3 clustered_USEARCH/uniques_R1.fasta \
+-tabbedout clustered_USEARCH/unoise_zotus_R1.txt \
+-zotus clustered_USEARCH/zotus_R1.fasta
+
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+-threads $SLURM_CPUS_PER_TASK \
+-otutab demultiplexed_R1/seqs_new.fastq \
+-zotus clustered_USEARCH/zotus_R1.fasta \
+-otutabout clustered_USEARCH/otu_table_ITS_UNOISE_R1.txt
+
+
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+-threads $SLURM_CPUS_PER_TASK \
+-unoise3 clustered_USEARCH/uniques_R2.fasta \
+-tabbedout clustered_USEARCH/unoise_zotus_R2.txt \
+-zotus clustered_USEARCH/zotus_R2.fasta
+
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+-threads $SLURM_CPUS_PER_TASK \
+-otutab demultiplexed_R2/seqs_new.fastq \
+-zotus clustered_USEARCH/zotus_R2.fasta \
+-otutabout clustered_USEARCH/otu_table_ITS_UNOISE_R2.txt 
+
+scontrol show job $SLURM_JOB_ID 
+
