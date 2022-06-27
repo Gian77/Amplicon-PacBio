@@ -12,46 +12,62 @@ cores="$SLURM_CPUS_PER_TASK"
 RAM="$SLURM_MEM_PER_NODE"
 
 echo -e "\n==== Paths, variables, links ====\n"
-echo -e "cd /mnt/home/benucci/Amplicon-PacBio/stripped/"
-cd /mnt/home/benucci/Amplicon-PacBio/stripped/
-echo -e "mkdir /mnt/home/benucci/Amplicon-PacBio/ccslength"
-mkdir /mnt/home/benucci/Amplicon-PacBio/ccslength
+echo -e "cd /mnt/home/benucci/Amplicon-PacBio/sortbyLength/"
+echo -e "mkdir /mnt/home/benucci/Amplicon-PacBio/sortbyLength"
+cd /mnt/home/benucci/Amplicon-PacBio/labeled/
+mkdir /mnt/home/benucci/Amplicon-PacBio/ccsLength
 
 echo -e "\n========= seqtk, length =========\n"
 conda activate seqtk
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=1299 && length($0) <= 1300' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/1300.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/1300.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/1300_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/1300_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/1300_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 800 && length(seq) <= 805) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/800.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/800.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/800_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/800_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/800_10.fasta
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=1399 && length($0) <= 1400' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/1400.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/1400.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/1400_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/1400_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/1400_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1200 && length(seq) <= 1205) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1200.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1200.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1200_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1200_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1200_10.fasta
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=1499 && length($0) <= 1500' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/1500.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/1500.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/1500_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/1500_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/1500_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1300 && length(seq) <= 1307) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1300.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1300.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1300_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1300_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1300_10.fasta
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=1599 && length($0) <= 1600' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/1600.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/1600.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/1600_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/1600_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/1600_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1410 && length(seq) <= 1415) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1400.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1400.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1400_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1400_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1400_10.fasta
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=1999 && length($0) <= 2000' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/2000.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/2000.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/2000_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/2000_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/2000_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1500 && length(seq) <= 1502) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1500.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1500.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1500_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1500_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1500_10.fasta
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=2499 && length($0) <= 2500' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/2500.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/2500.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/2500_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/2500_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/2500_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1600 && length(seq) <= 1605) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1600.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1600.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1600_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1600_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1600_10.fasta
 
-cat pooled.fastq | paste - - - - | awk 'length($0) >=2999 && length($0) <= 3000' | sed 's/\t/\n/g' > /mnt/home/benucci/Amplicon-PacBio/ccslength/3000.fastq
-seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccslength/3000.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccslength/3000_10.fastq
-seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccslength/3000_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccslength/3000_10.fasta
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1700 && length(seq) <= 1705) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1700.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1700.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1700_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1700_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1700_10.fasta
+
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1800 && length(seq) <= 1805) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/labeled/pooled.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1800.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1800.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1800_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/1800_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/1800_10.fasta
+
+awk 'BEGIN {FS = "\t" ; OFS = "\n"} {header = $0 ; getline seq ; getline qheader ; getline qseq ; if (length(seq) >= 1999 && length(seq) <= 2000) {print header, seq, qheader, qseq}}' < /mnt/home/benucci/Amplicon-PacBio/sortbyLength/exact.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/2000.fastq
+seqtk sample -s100 /mnt/home/benucci/Amplicon-PacBio/ccsLength/2000.fastq 10 > /mnt/home/benucci/Amplicon-PacBio/ccsLength/2000_10.fastq
+seqtk seq -aQ64 /mnt/home/benucci/Amplicon-PacBio/ccsLength/2000_10.fastq > /mnt/home/benucci/Amplicon-PacBio/ccsLength/2000_10.fasta
 
 conda deactivate
 
-cd /mnt/home/benucci/Amplicon-PacBio/ccslength/
-cat 1300_10.fasta 1400_10.fasta 1500_10.fasta 1600_10.fasta 2000_10.fasta 2500_10.fasta 3000_10.fasta > seq10range.fasta
+cd /mnt/home/benucci/Amplicon-PacBio/ccsLength/
+cat 800_10.fasta \
+1200_10.fasta \
+1300_10.fasta \
+1400_10.fasta \
+1500_10.fasta \
+1600_10.fasta \
+1700_10.fasta \
+1800_10.fasta \
+2000_10.fasta > seq10range.fasta
 
 echo -e "\n====== Sbatch log ========\n"
 scontrol show job $SLURM_JOB_ID 

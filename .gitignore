@@ -6,9 +6,13 @@ renamed/
 testing/
 stripped/
 ccslength/
+labeled/
+ccsLength/
+sortbyLength/
+sortbyLength_1416K/
 
 # just for now
-# pipeline/
+pipeline/
 
 # Files
 pipeline/slurm-*
