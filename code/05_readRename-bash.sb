@@ -1,0 +1,48 @@
+#!/bin/bash --login
+
+#SBATCH --time=01:59:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=64
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+echo -e "\n========== Sub-directories ==========\n"
+# rename files starting by finding the files based on filename, cleaning it and 
+# then changing the read header to the corresonding file name.
+# | sed 's/_R1.fastq//'
+echo -e "\n==== Paths, variables, links ====\n"
+echo -e "mkdir $project_dir/outputs/03_labeled"
+mkdir $project_dir/outputs/03_labeled
+echo -e "cp $project_dir/outputs/02_stripped/*_trim.fastq $project_dir/outputs/03_labeled"
+cp $project_dir/outputs/02_stripped/*_trim.fastq $project_dir/outputs/03_labeled
+echo -e "cd $project_dir/outputs/03_labeled"
+cd $project_dir/outputs/03_labeled/
+
+echo -e "\n========= Rename reads =========\n"
+find . -type f -name '*_trim.fastq' | while read FILE ; 
+    do
+    newfile="$(echo ${FILE} | sed '0,/_/s///' | cut -f 1 -d '_')" ;
+    mv "${FILE}" "${newfile}_rn.fastq" ;
+done 
+
+for file in `ls *_rn.fastq` ;
+   do
+   awk '/^@m64120/{print "@'${file//_rn.fastq/}'." ++i; next}{print}' < $file >> "${file//MMPRNT/mmprnt}" ;
+done
+
+# NOTE. The sed code is meant to replace the first _ with nothing. Useful first occurrence matching!
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+echo -e "\n `sacct -u benucci -j $SLURM_JOB_ID --format=JobID,JobName,Start,End,Elapsed,NCPUS` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/05_readRename-bash.slurm
+rm $project_dir/code/slurm*

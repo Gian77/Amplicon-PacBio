@@ -1,0 +1,37 @@
+#!/bin/bash --login
+
+#SBATCH --time=00:59:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=10
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+cho -e "\n========== Sub-directories ==========\n"
+echo -e "cd $project_dir/outputs/01_data_fastq/"
+cd $project_dir/outputs/01_data_fastq/
+
+echo -e "\n====== FastQC =======\n"
+
+cat *.fastq > reads.fastq
+conda activate fastqc
+echo -e "\nFastQC version: `fastqc --version` \n"
+fastqc ./reads.fastq
+conda deactivate
+
+rm reads.fastq
+
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+echo -e "\n `sacct -u benucci -j $SLURM_JOB_ID --format=JobID,JobName,Start,End,Elapsed,NCPUS` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/02_qualityCheck-fastqc.slurm
+rm $project_dir/code/slurm*

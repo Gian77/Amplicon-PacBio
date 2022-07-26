@@ -1,0 +1,40 @@
+#!/bin/bash --login
+
+#SBATCH --time=00:05:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+echo -e "\n========== Sub-directories ==========\n"
+
+echo -e "\n========== Sub-directories ==========\n"
+mkdir $project_dir/12_exportedReports-bash/
+mkdir $project_dir/12_exportedReports-bash/ASV-usearch-results
+cd $project_dir/12_exportedReports-bash/ASV-usearch-results
+
+cp -R $project_dir/stats/ .	 
+cp $project_dir/asv_unoise3/asv.fasta .
+cp $project_dir/asv_unoise3/asv_otu_table.txt .
+cp $project_dir/taxonomyassignemnts_constax2/constax_taxonomy.txt .
+cd ..
+
+tar -zcvf ASV-usearch-results.tar.gz --remove-files ASV-usearch-results/
+
+# ls > file.list
+# tar -cvf reports.tar.gz --gzip --remove-files -T file.list
+# mv reports.tar.gz ../${file%.*}_reports.tar.gz
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/12_exportreports-bash.slurm
+rm $project_dir/code/slurm*

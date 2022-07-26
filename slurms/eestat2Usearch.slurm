@@ -1,0 +1,1102 @@
+
+==== Paths, variables, links ====
+
+cd /mnt/home/benucci/Amplicon-PacBio/sortbyLength
+
+========= eestat2, USEARCH =========
+
+usearch v11.0.667_i86linux64, 1056Gb RAM, 128 cores
+(C) Copyright 2013-18 Robert C. Edgar, all rights reserved.
+https://drive5.com/usearch
+
+License: evanssa6@msu.edu, non-profit use, max 1 process(es)
+
+00:00 78Mb      0.1% Pass 100:01 1.4Gb     0.2% Reading reads00:02 1.4Gb     0.2% Reading reads00:03 1.4Gb     0.3% Reading reads00:04 1.4Gb     0.4% Reading reads00:05 1.4Gb     0.5% Reading reads00:06 1.4Gb     0.5% Reading reads00:07 1.4Gb     0.6% Reading reads00:08 1.4Gb     0.7% Reading reads00:09 1.4Gb     0.8% Reading reads00:10 1.4Gb     0.9% Reading reads00:11 1.4Gb     1.0% Reading reads00:12 1.4Gb     1.1% Reading reads00:13 1.4Gb     1.1% Reading reads00:14 1.4Gb     1.2% Reading reads00:15 1.4Gb     1.3% Reading reads00:16 1.4Gb     1.4% Reading reads00:17 1.4Gb     1.5% Reading reads00:18 1.4Gb     1.6% Reading reads00:19 1.4Gb     1.7% Reading reads00:20 1.4Gb     1.8% Reading reads00:21 1.4Gb     1.8% Reading reads00:22 1.4Gb     1.9% Reading reads00:23 1.4Gb     2.0% Reading reads00:24 1.4Gb     2.1% Reading reads00:25 1.4Gb     2.2% Reading reads00:26 1.4Gb     2.3% Reading reads00:27 1.4Gb     2.4% Reading reads00:28 1.4Gb     2.5% Reading reads00:29 1.4Gb     2.5% Reading reads00:30 1.4Gb     2.6% Reading reads00:31 1.4Gb     2.7% Reading reads00:32 1.4Gb     2.8% Reading reads00:33 1.4Gb     2.9% Reading reads00:34 1.4Gb     3.0% Reading reads00:35 1.4Gb     3.1% Reading reads00:36 1.4Gb     3.1% Reading reads00:37 1.4Gb     3.2% Reading reads00:38 1.4Gb     3.3% Reading reads00:39 1.4Gb     3.4% Reading reads00:40 1.4Gb     3.5% Reading reads00:41 1.4Gb     3.6% Reading reads00:42 1.4Gb     3.7% Reading reads00:43 1.4Gb     3.8% Reading reads00:44 1.4Gb     3.9% Reading reads00:45 1.4Gb     4.0% Reading reads00:46 1.4Gb     4.1% Reading reads00:47 1.4Gb     4.2% Reading reads00:48 1.4Gb     4.3% Reading reads00:49 1.4Gb     4.4% Reading reads00:50 1.4Gb     4.5% Reading reads00:51 1.4Gb     4.5% Reading reads00:52 1.4Gb     4.6% Reading reads00:53 1.4Gb     4.7% Reading reads00:54 1.4Gb     4.8% Reading reads00:55 1.4Gb     4.9% Reading reads00:56 1.4Gb     5.0% Reading reads00:57 1.4Gb     5.1% Reading reads00:58 1.4Gb     5.2% Reading reads00:59 1.4Gb     5.3% Reading reads01:00 1.4Gb     5.4% Reading reads01:01 1.4Gb     5.5% Reading reads01:02 1.4Gb     5.6% Reading reads01:03 1.4Gb     5.6% Reading reads01:04 1.4Gb     5.7% Reading reads01:05 1.4Gb     5.8% Reading reads01:06 1.4Gb     5.9% Reading reads01:07 1.4Gb     6.0% Reading reads01:08 1.4Gb     6.1% Reading reads01:09 1.4Gb     6.2% Reading reads01:10 1.4Gb     6.3% Reading reads01:11 1.4Gb     6.4% Reading reads01:12 1.4Gb     6.4% Reading reads01:13 1.4Gb     6.5% Reading reads01:14 1.4Gb     6.6% Reading reads01:15 1.4Gb     6.7% Reading reads01:16 1.4Gb     6.8% Reading reads01:17 1.4Gb     6.9% Reading reads01:18 1.4Gb     7.0% Reading reads01:19 1.4Gb     7.1% Reading reads01:20 1.4Gb     7.2% Reading reads01:21 1.4Gb     7.3% Reading reads01:22 1.4Gb     7.4% Reading reads01:23 1.4Gb     7.4% Reading reads01:24 1.4Gb     7.6% Reading reads01:25 1.4Gb     7.7% Reading reads01:26 1.4Gb     7.8% Reading reads01:27 1.4Gb     7.9% Reading reads01:28 1.4Gb     7.9% Reading reads01:29 1.4Gb     8.0% Reading reads01:30 1.4Gb     8.1% Reading reads01:31 1.4Gb     8.2% Reading reads01:32 1.4Gb     8.2% Reading reads01:33 1.4Gb     8.3% Reading reads01:34 1.4Gb     8.4% Reading reads01:35 1.4Gb     8.4% Reading reads01:36 1.4Gb     8.5% Reading reads01:37 1.4Gb     8.6% Reading reads01:38 1.4Gb     8.7% Reading reads01:39 1.4Gb     8.8% Reading reads01:40 1.4Gb     8.9% Reading reads01:41 1.4Gb     9.0% Reading reads01:42 1.4Gb     9.1% Reading reads01:43 1.4Gb     9.2% Reading reads01:44 1.4Gb     9.3% Reading reads01:45 1.4Gb     9.4% Reading reads01:46 1.4Gb     9.5% Reading reads01:47 1.4Gb     9.6% Reading reads01:48 1.4Gb     9.7% Reading reads01:49 1.4Gb     9.8% Reading reads01:50 1.4Gb     9.9% Reading reads01:51 1.4Gb     9.9% Reading reads01:52 1.4Gb    10.1% Reading reads01:53 1.4Gb    10.2% Reading reads01:54 1.4Gb    10.3% Reading reads01:55 1.4Gb    10.4% Reading reads01:56 1.4Gb    10.5% Reading reads01:57 1.4Gb    10.6% Reading reads01:58 1.4Gb    10.7% Reading reads01:59 1.4Gb    10.8% Reading reads02:00 1.4Gb    11.0% Reading reads02:01 1.4Gb    11.1% Reading reads02:02 1.4Gb    11.2% Reading reads02:03 1.4Gb    11.3% Reading reads02:04 1.4Gb    11.4% Reading reads02:05 1.4Gb    11.5% Reading reads02:06 1.4Gb    11.6% Reading reads02:07 1.4Gb    11.7% Reading reads02:08 1.4Gb    11.8% Reading reads02:09 1.4Gb    11.9% Reading reads02:10 1.4Gb    12.0% Reading reads02:11 1.4Gb    12.1% Reading reads02:12 1.4Gb    12.2% Reading reads02:13 1.4Gb    12.3% Reading reads02:14 1.4Gb    12.4% Reading reads02:15 1.4Gb    12.5% Reading reads02:16 1.4Gb    12.7% Reading reads02:17 1.4Gb    12.8% Reading reads02:18 1.4Gb    12.9% Reading reads02:19 1.4Gb    12.9% Reading reads02:20 1.4Gb    13.1% Reading reads02:21 1.4Gb    13.2% Reading reads02:22 1.4Gb    13.2% Reading reads02:23 1.4Gb    13.4% Reading reads02:24 1.4Gb    13.5% Reading reads02:25 1.4Gb    13.6% Reading reads02:26 1.4Gb    13.7% Reading reads02:27 1.4Gb    13.8% Reading reads02:28 1.4Gb    13.9% Reading reads02:29 1.4Gb    14.0% Reading reads02:30 1.4Gb    14.1% Reading reads02:31 1.4Gb    14.2% Reading reads02:32 1.4Gb    14.3% Reading reads02:33 1.4Gb    14.4% Reading reads02:34 1.4Gb    14.5% Reading reads02:35 1.4Gb    14.7% Reading reads02:36 1.4Gb    14.8% Reading reads02:37 1.4Gb    14.9% Reading reads02:38 1.4Gb    15.0% Reading reads02:39 1.4Gb    15.1% Reading reads02:40 1.4Gb    15.2% Reading reads02:41 1.4Gb    15.3% Reading reads02:42 1.4Gb    15.4% Reading reads02:43 1.4Gb    15.5% Reading reads02:44 1.4Gb    15.6% Reading reads02:45 1.4Gb    15.7% Reading reads02:46 1.4Gb    15.8% Reading reads02:47 1.4Gb    15.9% Reading reads02:48 1.4Gb    16.1% Reading reads02:49 1.4Gb    16.2% Reading reads02:50 1.4Gb    16.3% Reading reads02:51 1.4Gb    16.4% Reading reads02:52 1.4Gb    16.5% Reading reads02:53 1.4Gb    16.6% Reading reads02:54 1.4Gb    16.7% Reading reads02:55 1.4Gb    16.8% Reading reads02:56 1.4Gb    16.9% Reading reads02:57 1.4Gb    17.0% Reading reads02:58 1.4Gb    17.1% Reading reads02:59 1.4Gb    17.2% Reading reads03:00 1.4Gb    17.3% Reading reads03:01 1.4Gb    17.4% Reading reads03:02 1.4Gb    17.5% Reading reads03:03 1.4Gb    17.7% Reading reads03:04 1.4Gb    17.8% Reading reads03:05 1.4Gb    17.9% Reading reads03:06 1.4Gb    18.0% Reading reads03:07 1.4Gb    18.1% Reading reads03:08 1.4Gb    18.2% Reading reads03:09 1.4Gb    18.3% Reading reads03:10 1.4Gb    18.5% Reading reads03:11 1.4Gb    18.6% Reading reads03:12 1.4Gb    18.7% Reading reads03:13 1.4Gb    18.8% Reading reads03:14 1.4Gb    18.9% Reading reads03:15 1.4Gb    19.0% Reading reads03:16 1.4Gb    19.1% Reading reads03:17 1.4Gb    19.3% Reading reads03:18 1.4Gb    19.4% Reading reads03:19 1.4Gb    19.5% Reading reads03:20 1.4Gb    19.6% Reading reads03:21 1.4Gb    19.7% Reading reads03:22 1.4Gb    19.8% Reading reads03:23 1.4Gb    19.9% Reading reads03:24 1.4Gb    20.0% Reading reads03:25 1.4Gb    20.2% Reading reads03:26 1.4Gb    20.3% Reading reads03:27 1.4Gb    20.4% Reading reads03:28 1.4Gb    20.5% Reading reads03:29 1.4Gb    20.6% Reading reads03:30 1.4Gb    20.7% Reading reads03:31 1.4Gb    20.8% Reading reads03:32 1.4Gb    20.9% Reading reads03:33 1.4Gb    21.0% Reading reads03:34 1.4Gb    21.1% Reading reads03:35 1.4Gb    21.2% Reading reads03:36 1.4Gb    21.3% Reading reads03:37 1.4Gb    21.4% Reading reads03:38 1.4Gb    21.4% Reading reads03:39 1.4Gb    21.5% Reading reads03:40 1.4Gb    21.6% Reading reads03:41 1.4Gb    21.8% Reading reads03:42 1.4Gb    21.9% Reading reads03:43 1.4Gb    22.0% Reading reads03:44 1.4Gb    22.1% Reading reads03:45 1.4Gb    22.2% Reading reads03:46 1.4Gb    22.3% Reading reads03:47 1.4Gb    22.5% Reading reads03:48 1.4Gb    22.6% Reading reads03:49 1.4Gb    22.7% Reading reads03:50 1.4Gb    22.8% Reading reads03:51 1.4Gb    23.0% Reading reads03:52 1.4Gb    23.1% Reading reads03:53 1.4Gb    23.3% Reading reads03:54 1.4Gb    23.4% Reading reads03:55 1.4Gb    23.6% Reading reads03:56 1.4Gb    23.7% Reading reads03:57 1.4Gb    23.8% Reading reads03:58 1.4Gb    24.0% Reading reads03:59 1.4Gb    24.1% Reading reads04:00 1.4Gb    24.3% Reading reads04:01 1.4Gb    24.4% Reading reads04:02 1.4Gb    24.6% Reading reads04:03 1.4Gb    24.7% Reading reads04:04 1.4Gb    24.8% Reading reads04:05 1.4Gb    24.9% Reading reads04:06 1.4Gb    25.0% Reading reads04:07 1.4Gb    25.2% Reading reads04:08 1.4Gb    25.3% Reading reads04:09 1.4Gb    25.4% Reading reads04:10 1.4Gb    25.5% Reading reads04:11 1.4Gb    25.7% Reading reads04:12 1.4Gb    25.8% Reading reads04:13 1.4Gb    25.9% Reading reads04:14 1.4Gb    26.1% Reading reads04:15 1.4Gb    26.2% Reading reads04:16 1.4Gb    26.3% Reading reads04:17 1.4Gb    26.5% Reading reads04:18 1.4Gb    26.6% Reading reads04:19 1.4Gb    26.7% Reading reads04:20 1.4Gb    26.9% Reading reads04:21 1.4Gb    27.0% Reading reads04:22 1.4Gb    27.1% Reading reads04:23 1.4Gb    27.2% Reading reads04:24 1.4Gb    27.4% Reading reads04:25 1.4Gb    27.5% Reading reads04:26 1.4Gb    27.6% Reading reads04:27 1.4Gb    27.8% Reading reads04:28 1.4Gb    27.9% Reading reads04:29 1.4Gb    28.1% Reading reads04:30 1.4Gb    28.2% Reading reads04:31 1.4Gb    28.4% Reading reads04:32 1.4Gb    28.5% Reading reads04:33 1.4Gb    28.6% Reading reads04:34 1.4Gb    28.8% Reading reads04:35 1.4Gb    28.9% Reading reads04:36 1.4Gb    29.1% Reading reads04:37 1.4Gb    29.2% Reading reads04:38 1.4Gb    29.4% Reading reads04:39 1.4Gb    29.5% Reading reads04:40 1.4Gb    29.6% Reading reads04:41 1.4Gb    29.7% Reading reads04:42 1.4Gb    29.9% Reading reads04:43 1.4Gb    30.0% Reading reads04:44 1.4Gb    30.1% Reading reads04:45 1.4Gb    30.3% Reading reads04:46 1.4Gb    30.4% Reading reads04:47 1.4Gb    30.5% Reading reads04:48 1.4Gb    30.6% Reading reads04:49 1.4Gb    30.8% Reading reads04:50 1.4Gb    30.9% Reading reads04:51 1.4Gb    31.0% Reading reads04:52 1.4Gb    31.1% Reading reads04:53 1.4Gb    31.2% Reading reads04:54 1.4Gb    31.4% Reading reads04:55 1.4Gb    31.5% Reading reads04:56 1.4Gb    31.6% Reading reads04:57 1.4Gb    31.7% Reading reads04:58 1.4Gb    31.8% Reading reads04:59 1.4Gb    31.9% Reading reads05:00 1.4Gb    32.1% Reading reads05:01 1.4Gb    32.2% Reading reads05:02 1.4Gb    32.3% Reading reads05:03 1.4Gb    32.4% Reading reads05:04 1.4Gb    32.6% Reading reads05:05 1.4Gb    32.7% Reading reads05:06 1.4Gb    32.8% Reading reads05:07 1.4Gb    32.9% Reading reads05:08 1.4Gb    33.1% Reading reads05:09 1.4Gb    33.2% Reading reads05:10 1.4Gb    33.3% Reading reads05:11 1.4Gb    33.4% Reading reads05:12 1.4Gb    33.6% Reading reads05:13 1.4Gb    33.7% Reading reads05:14 1.4Gb    33.8% Reading reads05:15 1.4Gb    34.0% Reading reads05:16 1.4Gb    34.1% Reading reads05:17 1.4Gb    34.2% Reading reads05:18 1.4Gb    34.4% Reading reads05:19 1.4Gb    34.5% Reading reads05:20 1.4Gb    34.6% Reading reads05:21 1.4Gb    34.8% Reading reads05:22 1.4Gb    34.9% Reading reads05:23 1.4Gb    35.0% Reading reads05:24 1.4Gb    35.2% Reading reads05:25 1.4Gb    35.3% Reading reads05:26 1.4Gb    35.4% Reading reads05:27 1.4Gb    35.5% Reading reads05:28 1.4Gb    35.7% Reading reads05:29 1.4Gb    35.8% Reading reads05:30 1.4Gb    35.9% Reading reads05:31 1.4Gb    36.0% Reading reads05:32 1.4Gb    36.2% Reading reads05:33 1.4Gb    36.3% Reading reads05:34 1.4Gb    36.4% Reading reads05:35 1.4Gb    36.5% Reading reads05:36 1.4Gb    36.6% Reading reads05:37 1.4Gb    36.7% Reading reads05:38 1.4Gb    36.9% Reading reads05:39 1.4Gb    37.0% Reading reads05:40 1.4Gb    37.1% Reading reads05:41 1.4Gb    37.2% Reading reads05:42 1.4Gb    37.3% Reading reads05:43 1.4Gb    37.4% Reading reads05:44 1.4Gb    37.5% Reading reads05:45 1.4Gb    37.6% Reading reads05:46 1.4Gb    37.8% Reading reads05:47 1.4Gb    37.9% Reading reads05:48 1.4Gb    38.0% Reading reads05:49 1.4Gb    38.1% Reading reads05:50 1.4Gb    38.2% Reading reads05:51 1.4Gb    38.3% Reading reads05:52 1.4Gb    38.4% Reading reads05:53 1.4Gb    38.5% Reading reads05:54 1.4Gb    38.6% Reading reads05:55 1.4Gb    38.8% Reading reads05:56 1.4Gb    38.9% Reading reads05:57 1.4Gb    39.0% Reading reads05:58 1.4Gb    39.1% Reading reads05:59 1.4Gb    39.2% Reading reads06:00 1.4Gb    39.3% Reading reads06:01 1.4Gb    39.4% Reading reads06:02 1.4Gb    39.6% Reading reads06:03 1.4Gb    39.7% Reading reads06:04 1.4Gb    39.8% Reading reads06:05 1.4Gb    39.9% Reading reads06:06 1.4Gb    40.0% Reading reads06:07 1.4Gb    40.1% Reading reads06:08 1.4Gb    40.2% Reading reads06:09 1.4Gb    40.4% Reading reads06:10 1.4Gb    40.5% Reading reads06:11 1.4Gb    40.6% Reading reads06:12 1.4Gb    40.7% Reading reads06:13 1.4Gb    40.8% Reading reads06:14 1.4Gb    40.9% Reading reads06:15 1.4Gb    41.0% Reading reads06:16 1.4Gb    41.2% Reading reads06:17 1.4Gb    41.3% Reading reads06:18 1.4Gb    41.4% Reading reads06:19 1.4Gb    41.5% Reading reads06:20 1.4Gb    41.6% Reading reads06:21 1.4Gb    41.7% Reading reads06:22 1.4Gb    41.8% Reading reads06:23 1.4Gb    42.0% Reading reads06:24 1.4Gb    42.1% Reading reads06:25 1.4Gb    42.2% Reading reads06:26 1.4Gb    42.3% Reading reads06:27 1.4Gb    42.4% Reading reads06:28 1.4Gb    42.5% Reading reads06:29 1.4Gb    42.6% Reading reads06:30 1.4Gb    42.7% Reading reads06:31 1.4Gb    42.8% Reading reads06:32 1.4Gb    43.0% Reading reads06:33 1.4Gb    43.1% Reading reads06:34 1.4Gb    43.2% Reading reads06:35 1.4Gb    43.3% Reading reads06:36 1.4Gb    43.4% Reading reads06:37 1.4Gb    43.5% Reading reads06:38 1.4Gb    43.6% Reading reads06:39 1.4Gb    43.7% Reading reads06:40 1.4Gb    43.9% Reading reads06:41 1.4Gb    44.0% Reading reads06:42 1.4Gb    44.1% Reading reads06:43 1.4Gb    44.2% Reading reads06:44 1.4Gb    44.3% Reading reads06:45 1.4Gb    44.4% Reading reads06:46 1.4Gb    44.6% Reading reads06:47 1.4Gb    44.7% Reading reads06:48 1.4Gb    44.8% Reading reads06:49 1.4Gb    44.9% Reading reads06:50 1.4Gb    45.0% Reading reads06:51 1.4Gb    45.1% Reading reads06:52 1.4Gb    45.2% Reading reads06:53 1.4Gb    45.3% Reading reads06:54 1.4Gb    45.4% Reading reads06:55 1.4Gb    45.5% Reading reads06:56 1.4Gb    45.6% Reading reads06:57 1.4Gb    45.7% Reading reads06:58 1.4Gb    45.8% Reading reads06:59 1.4Gb    45.9% Reading reads07:00 1.4Gb    46.0% Reading reads07:01 1.4Gb    46.1% Reading reads07:02 1.4Gb    46.2% Reading reads07:03 1.4Gb    46.3% Reading reads07:04 1.4Gb    46.4% Reading reads07:05 1.4Gb    46.5% Reading reads07:06 1.4Gb    46.6% Reading reads07:07 1.4Gb    46.8% Reading reads07:08 1.4Gb    46.9% Reading reads07:09 1.4Gb    47.0% Reading reads07:10 1.4Gb    47.1% Reading reads07:11 1.4Gb    47.2% Reading reads07:12 1.4Gb    47.4% Reading reads07:13 1.4Gb    47.5% Reading reads07:14 1.4Gb    47.6% Reading reads07:15 1.4Gb    47.7% Reading reads07:16 1.4Gb    47.8% Reading reads07:17 1.4Gb    47.9% Reading reads07:18 1.4Gb    48.0% Reading reads07:19 1.4Gb    48.2% Reading reads07:20 1.4Gb    48.3% Reading reads07:21 1.4Gb    48.4% Reading reads07:22 1.4Gb    48.5% Reading reads07:23 1.4Gb    48.6% Reading reads07:24 1.4Gb    48.8% Reading reads07:25 1.4Gb    48.9% Reading reads07:26 1.4Gb    49.0% Reading reads07:27 1.4Gb    49.1% Reading reads07:28 1.4Gb    49.2% Reading reads07:29 1.4Gb    49.4% Reading reads07:30 1.4Gb    49.5% Reading reads07:31 1.4Gb    49.6% Reading reads07:32 1.4Gb    49.7% Reading reads07:33 1.4Gb    49.8% Reading reads07:34 1.4Gb    49.9% Reading reads07:35 1.4Gb    50.1% Reading reads07:36 1.4Gb    50.2% Reading reads07:37 1.4Gb    50.3% Reading reads07:38 1.4Gb    50.4% Reading reads07:39 1.4Gb    50.5% Reading reads07:40 1.4Gb    50.6% Reading reads07:41 1.4Gb    50.7% Reading reads07:42 1.4Gb    50.8% Reading reads07:43 1.4Gb    50.9% Reading reads07:44 1.4Gb    51.0% Reading reads07:45 1.4Gb    51.1% Reading reads07:46 1.4Gb    51.3% Reading reads07:47 1.4Gb    51.4% Reading reads07:48 1.4Gb    51.5% Reading reads07:49 1.4Gb    51.6% Reading reads07:50 1.4Gb    51.7% Reading reads07:51 1.4Gb    51.8% Reading reads07:52 1.4Gb    51.9% Reading reads07:53 1.4Gb    52.0% Reading reads07:54 1.4Gb    52.2% Reading reads07:55 1.4Gb    52.3% Reading reads07:56 1.4Gb    52.4% Reading reads07:57 1.4Gb    52.5% Reading reads07:58 1.4Gb    52.6% Reading reads07:59 1.4Gb    52.7% Reading reads08:00 1.4Gb    52.8% Reading reads08:01 1.4Gb    52.9% Reading reads08:02 1.4Gb    53.0% Reading reads08:03 1.4Gb    53.2% Reading reads08:04 1.4Gb    53.3% Reading reads08:05 1.4Gb    53.4% Reading reads08:06 1.4Gb    53.5% Reading reads08:07 1.4Gb    53.6% Reading reads08:08 1.4Gb    53.7% Reading reads08:09 1.4Gb    53.8% Reading reads08:10 1.4Gb    53.9% Reading reads08:11 1.4Gb    54.0% Reading reads08:12 1.4Gb    54.1% Reading reads08:13 1.4Gb    54.3% Reading reads08:14 1.4Gb    54.4% Reading reads08:15 1.4Gb    54.5% Reading reads08:16 1.4Gb    54.6% Reading reads08:17 1.4Gb    54.7% Reading reads08:18 1.4Gb    54.8% Reading reads08:19 1.4Gb    54.9% Reading reads08:20 1.4Gb    55.1% Reading reads08:21 1.4Gb    55.2% Reading reads08:22 1.4Gb    55.3% Reading reads08:23 1.4Gb    55.4% Reading reads08:24 1.4Gb    55.5% Reading reads08:25 1.4Gb    55.6% Reading reads08:26 1.4Gb    55.7% Reading reads08:27 1.4Gb    55.8% Reading reads08:28 1.4Gb    55.9% Reading reads08:29 1.4Gb    56.0% Reading reads08:30 1.4Gb    56.2% Reading reads08:31 1.4Gb    56.3% Reading reads08:32 1.4Gb    56.4% Reading reads08:33 1.4Gb    56.5% Reading reads08:34 1.4Gb    56.6% Reading reads08:35 1.4Gb    56.7% Reading reads08:36 1.4Gb    56.8% Reading reads08:37 1.4Gb    56.9% Reading reads08:38 1.4Gb    57.0% Reading reads08:39 1.4Gb    57.1% Reading reads08:40 1.4Gb    57.2% Reading reads08:41 1.4Gb    57.3% Reading reads08:42 1.4Gb    57.4% Reading reads08:43 1.4Gb    57.5% Reading reads08:44 1.4Gb    57.6% Reading reads08:45 1.4Gb    57.7% Reading reads08:46 1.4Gb    57.8% Reading reads08:47 1.4Gb    57.9% Reading reads08:48 1.4Gb    58.0% Reading reads08:49 1.4Gb    58.1% Reading reads08:50 1.4Gb    58.3% Reading reads08:51 1.4Gb    58.4% Reading reads08:52 1.4Gb    58.5% Reading reads08:53 1.4Gb    58.6% Reading reads08:54 1.4Gb    58.7% Reading reads08:55 1.4Gb    58.8% Reading reads08:56 1.4Gb    58.9% Reading reads08:57 1.4Gb    59.0% Reading reads08:58 1.4Gb    59.1% Reading reads08:59 1.4Gb    59.2% Reading reads09:00 1.4Gb    59.3% Reading reads09:01 1.4Gb    59.4% Reading reads09:02 1.4Gb    59.5% Reading reads09:03 1.4Gb    59.6% Reading reads09:04 1.4Gb    59.7% Reading reads09:05 1.4Gb    59.8% Reading reads09:06 1.4Gb    59.9% Reading reads09:07 1.4Gb    60.0% Reading reads09:08 1.4Gb    60.1% Reading reads09:09 1.4Gb    60.2% Reading reads09:10 1.4Gb    60.3% Reading reads09:11 1.4Gb    60.4% Reading reads09:12 1.4Gb    60.5% Reading reads09:13 1.4Gb    60.6% Reading reads09:14 1.4Gb    60.7% Reading reads09:15 1.4Gb    60.8% Reading reads09:16 1.4Gb    60.9% Reading reads09:17 1.4Gb    61.0% Reading reads09:18 1.4Gb    61.1% Reading reads09:19 1.4Gb    61.2% Reading reads09:20 1.4Gb    61.4% Reading reads09:21 1.4Gb    61.5% Reading reads09:22 1.4Gb    61.6% Reading reads09:23 1.4Gb    61.7% Reading reads09:24 1.4Gb    61.8% Reading reads09:25 1.4Gb    61.9% Reading reads09:26 1.4Gb    62.0% Reading reads09:27 1.4Gb    62.1% Reading reads09:28 1.4Gb    62.2% Reading reads09:29 1.4Gb    62.3% Reading reads09:30 1.4Gb    62.5% Reading reads09:31 1.4Gb    62.6% Reading reads09:32 1.4Gb    62.7% Reading reads09:33 1.4Gb    62.8% Reading reads09:34 1.4Gb    62.9% Reading reads09:35 1.4Gb    63.0% Reading reads09:36 1.4Gb    63.1% Reading reads09:37 1.4Gb    63.2% Reading reads09:38 1.4Gb    63.3% Reading reads09:39 1.4Gb    63.4% Reading reads09:40 1.4Gb    63.5% Reading reads09:41 1.4Gb    63.7% Reading reads09:42 1.4Gb    63.8% Reading reads09:43 1.4Gb    63.9% Reading reads09:44 1.4Gb    64.0% Reading reads09:45 1.4Gb    64.1% Reading reads09:46 1.4Gb    64.2% Reading reads09:47 1.4Gb    64.3% Reading reads09:48 1.4Gb    64.4% Reading reads09:49 1.4Gb    64.6% Reading reads09:50 1.4Gb    64.7% Reading reads09:51 1.4Gb    64.8% Reading reads09:52 1.4Gb    64.9% Reading reads09:53 1.4Gb    65.0% Reading reads09:54 1.4Gb    65.1% Reading reads09:55 1.4Gb    65.3% Reading reads09:56 1.4Gb    65.4% Reading reads09:57 1.4Gb    65.5% Reading reads09:58 1.4Gb    65.6% Reading reads09:59 1.4Gb    65.7% Reading reads10:00 1.4Gb    65.8% Reading reads10:01 1.4Gb    65.9% Reading reads10:02 1.4Gb    66.1% Reading reads10:03 1.4Gb    66.2% Reading reads10:04 1.4Gb    66.3% Reading reads10:05 1.4Gb    66.4% Reading reads10:06 1.4Gb    66.5% Reading reads10:07 1.4Gb    66.7% Reading reads10:08 1.4Gb    66.8% Reading reads10:09 1.4Gb    66.9% Reading reads10:10 1.4Gb    67.0% Reading reads10:11 1.4Gb    67.1% Reading reads10:12 1.4Gb    67.3% Reading reads10:13 1.4Gb    67.4% Reading reads10:14 1.4Gb    67.5% Reading reads10:15 1.4Gb    67.6% Reading reads10:16 1.4Gb    67.7% Reading reads10:17 1.4Gb    67.8% Reading reads10:18 1.4Gb    67.9% Reading reads10:19 1.4Gb    68.1% Reading reads10:20 1.4Gb    68.2% Reading reads10:21 1.4Gb    68.3% Reading reads10:22 1.4Gb    68.4% Reading reads10:23 1.4Gb    68.5% Reading reads10:24 1.4Gb    68.7% Reading reads10:25 1.4Gb    68.8% Reading reads10:26 1.4Gb    68.9% Reading reads10:27 1.4Gb    69.0% Reading reads10:28 1.4Gb    69.1% Reading reads10:29 1.4Gb    69.2% Reading reads10:30 1.4Gb    69.3% Reading reads10:31 1.4Gb    69.4% Reading reads10:32 1.4Gb    69.6% Reading reads10:33 1.4Gb    69.7% Reading reads10:34 1.4Gb    69.8% Reading reads10:35 1.4Gb    69.9% Reading reads10:36 1.4Gb    70.0% Reading reads10:37 1.4Gb    70.1% Reading reads10:38 1.4Gb    70.2% Reading reads10:39 1.4Gb    70.3% Reading reads10:40 1.4Gb    70.5% Reading reads10:41 1.4Gb    70.6% Reading reads10:42 1.4Gb    70.7% Reading reads10:43 1.4Gb    70.8% Reading reads10:44 1.4Gb    70.9% Reading reads10:45 1.4Gb    71.0% Reading reads10:46 1.4Gb    71.1% Reading reads10:47 1.4Gb    71.2% Reading reads10:48 1.4Gb    71.3% Reading reads10:49 1.4Gb    71.4% Reading reads10:50 1.4Gb    71.4% Reading reads10:51 1.4Gb    71.5% Reading reads10:52 1.4Gb    71.6% Reading reads10:53 1.4Gb    71.7% Reading reads10:54 1.4Gb    71.8% Reading reads10:55 1.4Gb    71.9% Reading reads10:56 1.4Gb    72.0% Reading reads10:57 1.4Gb    72.1% Reading reads10:58 1.4Gb    72.2% Reading reads10:59 1.4Gb    72.3% Reading reads11:00 1.4Gb    72.4% Reading reads11:01 1.4Gb    72.5% Reading reads11:02 1.4Gb    72.6% Reading reads11:03 1.4Gb    72.7% Reading reads11:04 1.4Gb    72.8% Reading reads11:05 1.4Gb    72.9% Reading reads11:06 1.4Gb    73.0% Reading reads11:07 1.4Gb    73.1% Reading reads11:08 1.4Gb    73.2% Reading reads11:09 1.4Gb    73.3% Reading reads11:10 1.4Gb    73.4% Reading reads11:11 1.4Gb    73.5% Reading reads11:12 1.4Gb    73.6% Reading reads11:13 1.4Gb    73.7% Reading reads11:14 1.4Gb    73.8% Reading reads11:15 1.4Gb    73.9% Reading reads11:16 1.4Gb    74.0% Reading reads11:17 1.4Gb    74.0% Reading reads11:18 1.4Gb    74.1% Reading reads11:19 1.4Gb    74.2% Reading reads11:20 1.4Gb    74.3% Reading reads11:21 1.4Gb    74.4% Reading reads11:22 1.4Gb    74.5% Reading reads11:23 1.4Gb    74.6% Reading reads11:24 1.4Gb    74.7% Reading reads11:25 1.4Gb    74.8% Reading reads11:26 1.4Gb    74.9% Reading reads11:27 1.4Gb    75.0% Reading reads11:28 1.4Gb    75.1% Reading reads11:29 1.4Gb    75.2% Reading reads11:30 1.4Gb    75.3% Reading reads11:31 1.4Gb    75.4% Reading reads11:32 1.4Gb    75.5% Reading reads11:33 1.4Gb    75.6% Reading reads11:34 1.4Gb    75.7% Reading reads11:35 1.4Gb    75.8% Reading reads11:36 1.4Gb    75.9% Reading reads11:37 1.4Gb    76.0% Reading reads11:38 1.4Gb    76.1% Reading reads11:39 1.4Gb    76.2% Reading reads11:40 1.4Gb    76.2% Reading reads11:41 1.4Gb    76.3% Reading reads11:42 1.4Gb    76.4% Reading reads11:43 1.4Gb    76.5% Reading reads11:44 1.4Gb    76.6% Reading reads11:45 1.4Gb    76.7% Reading reads11:46 1.4Gb    76.8% Reading reads11:47 1.4Gb    76.9% Reading reads11:48 1.4Gb    77.0% Reading reads11:49 1.4Gb    77.1% Reading reads11:50 1.4Gb    77.1% Reading reads11:51 1.4Gb    77.2% Reading reads11:52 1.4Gb    77.3% Reading reads11:53 1.4Gb    77.4% Reading reads11:54 1.4Gb    77.5% Reading reads11:55 1.4Gb    77.6% Reading reads11:56 1.4Gb    77.7% Reading reads11:57 1.4Gb    77.8% Reading reads11:58 1.4Gb    77.8% Reading reads11:59 1.4Gb    77.9% Reading reads12:00 1.4Gb    78.0% Reading reads12:01 1.4Gb    78.1% Reading reads12:02 1.4Gb    78.2% Reading reads12:03 1.4Gb    78.3% Reading reads12:04 1.4Gb    78.4% Reading reads12:05 1.4Gb    78.5% Reading reads12:06 1.4Gb    78.6% Reading reads12:07 1.4Gb    78.7% Reading reads12:08 1.4Gb    78.8% Reading reads12:09 1.4Gb    79.0% Reading reads12:10 1.4Gb    79.1% Reading reads12:11 1.4Gb    79.2% Reading reads12:12 1.4Gb    79.3% Reading reads12:13 1.4Gb    79.4% Reading reads12:14 1.4Gb    79.5% Reading reads12:15 1.4Gb    79.6% Reading reads12:16 1.4Gb    79.7% Reading reads12:17 1.4Gb    79.9% Reading reads12:18 1.4Gb    80.0% Reading reads12:19 1.4Gb    80.1% Reading reads12:20 1.4Gb    80.2% Reading reads12:21 1.4Gb    80.4% Reading reads12:22 1.4Gb    80.5% Reading reads12:23 1.4Gb    80.6% Reading reads12:24 1.4Gb    80.7% Reading reads12:25 1.4Gb    80.9% Reading reads12:26 1.4Gb    81.0% Reading reads12:27 1.4Gb    81.1% Reading reads12:28 1.4Gb    81.2% Reading reads12:29 1.4Gb    81.3% Reading reads12:30 1.4Gb    81.4% Reading reads12:31 1.4Gb    81.5% Reading reads12:32 1.4Gb    81.6% Reading reads12:33 1.4Gb    81.8% Reading reads12:34 1.4Gb    81.9% Reading reads12:35 1.4Gb    82.0% Reading reads12:36 1.4Gb    82.1% Reading reads12:37 1.4Gb    82.2% Reading reads12:38 1.4Gb    82.3% Reading reads12:39 1.4Gb    82.4% Reading reads12:40 1.4Gb    82.5% Reading reads12:41 1.4Gb    82.6% Reading reads12:42 1.4Gb    82.7% Reading reads12:43 1.4Gb    82.8% Reading reads12:44 1.4Gb    82.9% Reading reads12:45 1.4Gb    83.0% Reading reads12:46 1.4Gb    83.1% Reading reads12:47 1.4Gb    83.2% Reading reads12:48 1.4Gb    83.3% Reading reads12:49 1.4Gb    83.4% Reading reads12:50 1.4Gb    83.5% Reading reads12:51 1.4Gb    83.6% Reading reads12:52 1.4Gb    83.7% Reading reads12:53 1.4Gb    83.8% Reading reads12:54 1.4Gb    83.9% Reading reads12:55 1.4Gb    84.0% Reading reads12:56 1.4Gb    84.1% Reading reads12:57 1.4Gb    84.2% Reading reads12:58 1.4Gb    84.3% Reading reads12:59 1.4Gb    84.4% Reading reads13:00 1.4Gb    84.5% Reading reads13:01 1.4Gb    84.6% Reading reads13:02 1.4Gb    84.7% Reading reads13:03 1.4Gb    84.8% Reading reads13:04 1.4Gb    84.9% Reading reads13:05 1.4Gb    85.0% Reading reads13:06 1.4Gb    85.1% Reading reads13:07 1.4Gb    85.3% Reading reads13:08 1.4Gb    85.4% Reading reads13:09 1.4Gb    85.5% Reading reads13:10 1.4Gb    85.6% Reading reads13:11 1.4Gb    85.7% Reading reads13:12 1.4Gb    85.8% Reading reads13:13 1.4Gb    85.9% Reading reads13:14 1.4Gb    86.0% Reading reads13:15 1.4Gb    86.1% Reading reads13:16 1.4Gb    86.2% Reading reads13:17 1.4Gb    86.3% Reading reads13:18 1.4Gb    86.4% Reading reads13:19 1.4Gb    86.5% Reading reads13:20 1.4Gb    86.6% Reading reads13:21 1.4Gb    86.7% Reading reads13:22 1.4Gb    86.9% Reading reads13:23 1.4Gb    87.0% Reading reads13:24 1.4Gb    87.1% Reading reads13:25 1.4Gb    87.2% Reading reads13:26 1.4Gb    87.3% Reading reads13:27 1.4Gb    87.4% Reading reads13:28 1.4Gb    87.5% Reading reads13:29 1.4Gb    87.6% Reading reads13:30 1.4Gb    87.7% Reading reads13:31 1.4Gb    87.9% Reading reads13:32 1.4Gb    88.0% Reading reads13:33 1.4Gb    88.1% Reading reads13:34 1.4Gb    88.2% Reading reads13:35 1.4Gb    88.3% Reading reads13:36 1.4Gb    88.4% Reading reads13:37 1.4Gb    88.6% Reading reads13:38 1.4Gb    88.7% Reading reads13:39 1.4Gb    88.8% Reading reads13:40 1.4Gb    88.9% Reading reads13:41 1.4Gb    89.0% Reading reads13:42 1.4Gb    89.2% Reading reads13:43 1.4Gb    89.3% Reading reads13:44 1.4Gb    89.4% Reading reads13:45 1.4Gb    89.5% Reading reads13:46 1.4Gb    89.6% Reading reads13:47 1.4Gb    89.7% Reading reads13:48 1.4Gb    89.8% Reading reads13:49 1.4Gb    89.9% Reading reads13:50 1.4Gb    90.0% Reading reads13:51 1.4Gb    90.1% Reading reads13:52 1.4Gb    90.2% Reading reads13:53 1.4Gb    90.3% Reading reads13:54 1.4Gb    90.4% Reading reads13:55 1.4Gb    90.5% Reading reads13:56 1.4Gb    90.6% Reading reads13:57 1.4Gb    90.8% Reading reads13:58 1.4Gb    90.9% Reading reads13:59 1.4Gb    91.0% Reading reads14:00 1.4Gb    91.2% Reading reads14:01 1.4Gb    91.3% Reading reads14:02 1.4Gb    91.4% Reading reads14:03 1.4Gb    91.5% Reading reads14:04 1.4Gb    91.6% Reading reads14:05 1.4Gb    91.7% Reading reads14:06 1.4Gb    91.8% Reading reads14:07 1.4Gb    91.9% Reading reads14:08 1.4Gb    92.1% Reading reads14:09 1.4Gb    92.2% Reading reads14:10 1.4Gb    92.3% Reading reads14:11 1.4Gb    92.4% Reading reads14:12 1.4Gb    92.5% Reading reads14:13 1.4Gb    92.6% Reading reads14:14 1.4Gb    92.7% Reading reads14:15 1.4Gb    92.8% Reading reads14:16 1.4Gb    92.9% Reading reads14:17 1.4Gb    93.0% Reading reads14:18 1.4Gb    93.1% Reading reads14:19 1.4Gb    93.2% Reading reads14:20 1.4Gb    93.4% Reading reads14:21 1.4Gb    93.5% Reading reads14:22 1.4Gb    93.6% Reading reads14:23 1.4Gb    93.7% Reading reads14:24 1.4Gb    93.8% Reading reads14:25 1.4Gb    94.0% Reading reads14:26 1.4Gb    94.1% Reading reads14:27 1.4Gb    94.2% Reading reads14:28 1.4Gb    94.3% Reading reads14:29 1.4Gb    94.5% Reading reads14:30 1.4Gb    94.6% Reading reads14:31 1.4Gb    94.7% Reading reads14:32 1.4Gb    94.8% Reading reads14:33 1.4Gb    95.0% Reading reads14:34 1.4Gb    95.1% Reading reads14:35 1.4Gb    95.2% Reading reads14:36 1.4Gb    95.3% Reading reads14:37 1.4Gb    95.4% Reading reads14:38 1.4Gb    95.5% Reading reads14:39 1.4Gb    95.6% Reading reads14:40 1.4Gb    95.7% Reading reads14:41 1.4Gb    95.8% Reading reads14:42 1.4Gb    96.0% Reading reads14:43 1.4Gb    96.1% Reading reads14:44 1.4Gb    96.2% Reading reads14:45 1.4Gb    96.3% Reading reads14:46 1.4Gb    96.4% Reading reads14:47 1.4Gb    96.6% Reading reads14:48 1.4Gb    96.7% Reading reads14:49 1.4Gb    96.8% Reading reads14:50 1.4Gb    96.9% Reading reads14:51 1.4Gb    97.0% Reading reads14:52 1.4Gb    97.2% Reading reads14:53 1.4Gb    97.3% Reading reads14:54 1.4Gb    97.4% Reading reads14:55 1.4Gb    97.5% Reading reads14:56 1.4Gb    97.7% Reading reads14:57 1.4Gb    97.8% Reading reads14:58 1.4Gb    97.9% Reading reads14:59 1.4Gb    98.0% Reading reads15:00 1.4Gb    98.1% Reading reads15:01 1.4Gb    98.3% Reading reads15:02 1.4Gb    98.4% Reading reads15:03 1.4Gb    98.6% Reading reads15:04 1.4Gb    98.8% Reading reads15:05 1.4Gb    98.9% Reading reads15:06 1.4Gb    99.1% Reading reads15:07 1.4Gb    99.2% Reading reads15:08 1.4Gb    99.4% Reading reads15:09 1.4Gb    99.6% Reading reads15:10 1.4Gb    99.8% Reading reads15:10 1.4Gb   100.0% Reading reads
+
+2271350 reads, max len 2000, avg 1545.4
+
+Length         MaxEE 0.50         MaxEE 1.00         MaxEE 2.00
+------   ----------------   ----------------   ----------------
+   950    1515998( 66.7%)    1759016( 77.4%)    1961242( 86.3%)
+   951    1515767( 66.7%)    1758784( 77.4%)    1961067( 86.3%)
+   952    1515537( 66.7%)    1758565( 77.4%)    1960872( 86.3%)
+   953    1515313( 66.7%)    1758347( 77.4%)    1960699( 86.3%)
+   954    1515036( 66.7%)    1758142( 77.4%)    1960529( 86.3%)
+   955    1514767( 66.7%)    1757902( 77.4%)    1960348( 86.3%)
+   956    1514491( 66.7%)    1757664( 77.4%)    1960186( 86.3%)
+   957    1514204( 66.7%)    1757426( 77.4%)    1960000( 86.3%)
+   958    1513885( 66.7%)    1757208( 77.4%)    1959790( 86.3%)
+   959    1513629( 66.6%)    1756967( 77.4%)    1959602( 86.3%)
+   960    1513365( 66.6%)    1756745( 77.3%)    1959400( 86.3%)
+   961    1513100( 66.6%)    1756535( 77.3%)    1959235( 86.3%)
+   962    1512852( 66.6%)    1756303( 77.3%)    1959052( 86.3%)
+   963    1512601( 66.6%)    1756091( 77.3%)    1958867( 86.2%)
+   964    1512314( 66.6%)    1755867( 77.3%)    1958671( 86.2%)
+   965    1512079( 66.6%)    1755648( 77.3%)    1958479( 86.2%)
+   966    1511832( 66.6%)    1755448( 77.3%)    1958271( 86.2%)
+   967    1511569( 66.5%)    1755240( 77.3%)    1958071( 86.2%)
+   968    1511267( 66.5%)    1755006( 77.3%)    1957861( 86.2%)
+   969    1510857( 66.5%)    1754800( 77.3%)    1957680( 86.2%)
+   970    1510595( 66.5%)    1754595( 77.2%)    1957499( 86.2%)
+   971    1510355( 66.5%)    1754362( 77.2%)    1957323( 86.2%)
+   972    1510098( 66.5%)    1754148( 77.2%)    1957131( 86.2%)
+   973    1509843( 66.5%)    1753910( 77.2%)    1956919( 86.2%)
+   974    1509624( 66.5%)    1753678( 77.2%)    1956718( 86.1%)
+   975    1509366( 66.5%)    1753440( 77.2%)    1956524( 86.1%)
+   976    1509141( 66.4%)    1753239( 77.2%)    1956339( 86.1%)
+   977    1508923( 66.4%)    1753034( 77.2%)    1956174( 86.1%)
+   978    1508709( 66.4%)    1752844( 77.2%)    1955989( 86.1%)
+   979    1508509( 66.4%)    1752655( 77.2%)    1955794( 86.1%)
+   980    1508286( 66.4%)    1752473( 77.2%)    1955626( 86.1%)
+   981    1508113( 66.4%)    1752288( 77.1%)    1955462( 86.1%)
+   982    1507941( 66.4%)    1752094( 77.1%)    1955278( 86.1%)
+   983    1507751( 66.4%)    1751916( 77.1%)    1955106( 86.1%)
+   984    1507598( 66.4%)    1751743( 77.1%)    1954974( 86.1%)
+   985    1507417( 66.4%)    1751579( 77.1%)    1954809( 86.1%)
+   986    1507244( 66.4%)    1751408( 77.1%)    1954647( 86.1%)
+   987    1507065( 66.4%)    1751217( 77.1%)    1954501( 86.1%)
+   988    1506856( 66.3%)    1751026( 77.1%)    1954342( 86.0%)
+   989    1506665( 66.3%)    1750855( 77.1%)    1954179( 86.0%)
+   990    1506464( 66.3%)    1750690( 77.1%)    1954023( 86.0%)
+   991    1506292( 66.3%)    1750524( 77.1%)    1953859( 86.0%)
+   992    1506071( 66.3%)    1750360( 77.1%)    1953703( 86.0%)
+   993    1505878( 66.3%)    1750190( 77.1%)    1953538( 86.0%)
+   994    1505663( 66.3%)    1750017( 77.0%)    1953373( 86.0%)
+   995    1505454( 66.3%)    1749832( 77.0%)    1953210( 86.0%)
+   996    1505276( 66.3%)    1749663( 77.0%)    1953050( 86.0%)
+   997    1505094( 66.3%)    1749487( 77.0%)    1952908( 86.0%)
+   998    1504910( 66.3%)    1749324( 77.0%)    1952756( 86.0%)
+   999    1504732( 66.2%)    1749174( 77.0%)    1952605( 86.0%)
+  1000    1504559( 66.2%)    1749036( 77.0%)    1952461( 86.0%)
+  1001    1504302( 66.2%)    1748784( 77.0%)    1952245( 86.0%)
+  1002    1504046( 66.2%)    1748572( 77.0%)    1952016( 85.9%)
+  1003    1503796( 66.2%)    1748349( 77.0%)    1951792( 85.9%)
+  1004    1503549( 66.2%)    1748120( 77.0%)    1951594( 85.9%)
+  1005    1503338( 66.2%)    1747914( 77.0%)    1951413( 85.9%)
+  1006    1503106( 66.2%)    1747680( 76.9%)    1951204( 85.9%)
+  1007    1502854( 66.2%)    1747458( 76.9%)    1950990( 85.9%)
+  1008    1502612( 66.2%)    1747250( 76.9%)    1950745( 85.9%)
+  1009    1502390( 66.1%)    1747003( 76.9%)    1950527( 85.9%)
+  1010    1502148( 66.1%)    1746797( 76.9%)    1950329( 85.9%)
+  1011    1501919( 66.1%)    1746580( 76.9%)    1950117( 85.9%)
+  1012    1501660( 66.1%)    1746340( 76.9%)    1949861( 85.8%)
+  1013    1501439( 66.1%)    1746095( 76.9%)    1949663( 85.8%)
+  1014    1501190( 66.1%)    1745872( 76.9%)    1949437( 85.8%)
+  1015    1500905( 66.1%)    1745652( 76.9%)    1949232( 85.8%)
+  1016    1500677( 66.1%)    1745435( 76.8%)    1949032( 85.8%)
+  1017    1500446( 66.1%)    1745216( 76.8%)    1948835( 85.8%)
+  1018    1500226( 66.0%)    1745013( 76.8%)    1948655( 85.8%)
+  1019    1499962( 66.0%)    1744780( 76.8%)    1948443( 85.8%)
+  1020    1499720( 66.0%)    1744539( 76.8%)    1948258( 85.8%)
+  1021    1499465( 66.0%)    1744316( 76.8%)    1948016( 85.8%)
+  1022    1499199( 66.0%)    1744119( 76.8%)    1947805( 85.8%)
+  1023    1498963( 66.0%)    1743942( 76.8%)    1947600( 85.7%)
+  1024    1498717( 66.0%)    1743744( 76.8%)    1947404( 85.7%)
+  1025    1498474( 66.0%)    1743529( 76.8%)    1947201( 85.7%)
+  1026    1498220( 66.0%)    1743294( 76.8%)    1947014( 85.7%)
+  1027    1497972( 66.0%)    1743085( 76.7%)    1946818( 85.7%)
+  1028    1497696( 65.9%)    1742825( 76.7%)    1946592( 85.7%)
+  1029    1497429( 65.9%)    1742617( 76.7%)    1946380( 85.7%)
+  1030    1497145( 65.9%)    1742378( 76.7%)    1946167( 85.7%)
+  1031    1496900( 65.9%)    1742136( 76.7%)    1945943( 85.7%)
+  1032    1496635( 65.9%)    1741901( 76.7%)    1945732( 85.7%)
+  1033    1496337( 65.9%)    1741690( 76.7%)    1945524( 85.7%)
+  1034    1495921( 65.9%)    1741469( 76.7%)    1945310( 85.6%)
+  1035    1495694( 65.9%)    1741238( 76.7%)    1945108( 85.6%)
+  1036    1495452( 65.8%)    1741013( 76.7%)    1944891( 85.6%)
+  1037    1495173( 65.8%)    1740788( 76.6%)    1944661( 85.6%)
+  1038    1494933( 65.8%)    1740532( 76.6%)    1944434( 85.6%)
+  1039    1494708( 65.8%)    1740322( 76.6%)    1944237( 85.6%)
+  1040    1494476( 65.8%)    1740088( 76.6%)    1944007( 85.6%)
+  1041    1494241( 65.8%)    1739899( 76.6%)    1943795( 85.6%)
+  1042    1493983( 65.8%)    1739647( 76.6%)    1943550( 85.6%)
+  1043    1493731( 65.8%)    1739428( 76.6%)    1943326( 85.6%)
+  1044    1493515( 65.8%)    1739206( 76.6%)    1943098( 85.5%)
+  1045    1493277( 65.7%)    1738975( 76.6%)    1942866( 85.5%)
+  1046    1493003( 65.7%)    1738740( 76.6%)    1942635( 85.5%)
+  1047    1492754( 65.7%)    1738512( 76.5%)    1942417( 85.5%)
+  1048    1492502( 65.7%)    1738294( 76.5%)    1942187( 85.5%)
+  1049    1492241( 65.7%)    1738055( 76.5%)    1941971( 85.5%)
+  1050    1491979( 65.7%)    1737810( 76.5%)    1941734( 85.5%)
+  1051    1491715( 65.7%)    1737591( 76.5%)    1941509( 85.5%)
+  1052    1491472( 65.7%)    1737368( 76.5%)    1941289( 85.5%)
+  1053    1491213( 65.7%)    1737157( 76.5%)    1941062( 85.5%)
+  1054    1490938( 65.6%)    1736920( 76.5%)    1940832( 85.4%)
+  1055    1490674( 65.6%)    1736714( 76.5%)    1940628( 85.4%)
+  1056    1490388( 65.6%)    1736501( 76.5%)    1940447( 85.4%)
+  1057    1489953( 65.6%)    1736266( 76.4%)    1940215( 85.4%)
+  1058    1489703( 65.6%)    1736029( 76.4%)    1940023( 85.4%)
+  1059    1489456( 65.6%)    1735794( 76.4%)    1939789( 85.4%)
+  1060    1489192( 65.6%)    1735565( 76.4%)    1939572( 85.4%)
+  1061    1488939( 65.6%)    1735346( 76.4%)    1939363( 85.4%)
+  1062    1488698( 65.5%)    1735101( 76.4%)    1939110( 85.4%)
+  1063    1488428( 65.5%)    1734852( 76.4%)    1938898( 85.4%)
+  1064    1488153( 65.5%)    1734603( 76.4%)    1938648( 85.4%)
+  1065    1487926( 65.5%)    1734385( 76.4%)    1938423( 85.3%)
+  1066    1487640( 65.5%)    1734153( 76.3%)    1938196( 85.3%)
+  1067    1487384( 65.5%)    1733908( 76.3%)    1937970( 85.3%)
+  1068    1487135( 65.5%)    1733667( 76.3%)    1937761( 85.3%)
+  1069    1486871( 65.5%)    1733424( 76.3%)    1937528( 85.3%)
+  1070    1486603( 65.5%)    1733169( 76.3%)    1937301( 85.3%)
+  1071    1486345( 65.4%)    1732928( 76.3%)    1937072( 85.3%)
+  1072    1486074( 65.4%)    1732663( 76.3%)    1936840( 85.3%)
+  1073    1485797( 65.4%)    1732412( 76.3%)    1936619( 85.3%)
+  1074    1485536( 65.4%)    1732186( 76.3%)    1936396( 85.3%)
+  1075    1485281( 65.4%)    1731945( 76.3%)    1936195( 85.2%)
+  1076    1485022( 65.4%)    1731694( 76.2%)    1935983( 85.2%)
+  1077    1484750( 65.4%)    1731473( 76.2%)    1935772( 85.2%)
+  1078    1484497( 65.4%)    1731261( 76.2%)    1935585( 85.2%)
+  1079    1484247( 65.3%)    1731026( 76.2%)    1935323( 85.2%)
+  1080    1483986( 65.3%)    1730789( 76.2%)    1935114( 85.2%)
+  1081    1483708( 65.3%)    1730521( 76.2%)    1934908( 85.2%)
+  1082    1483442( 65.3%)    1730274( 76.2%)    1934687( 85.2%)
+  1083    1483152( 65.3%)    1730054( 76.2%)    1934437( 85.2%)
+  1084    1482846( 65.3%)    1729789( 76.2%)    1934194( 85.2%)
+  1085    1482573( 65.3%)    1729558( 76.1%)    1933974( 85.1%)
+  1086    1482118( 65.3%)    1729307( 76.1%)    1933715( 85.1%)
+  1087    1481821( 65.2%)    1729035( 76.1%)    1933465( 85.1%)
+  1088    1481571( 65.2%)    1728781( 76.1%)    1933258( 85.1%)
+  1089    1481320( 65.2%)    1728491( 76.1%)    1933005( 85.1%)
+  1090    1481034( 65.2%)    1728239( 76.1%)    1932759( 85.1%)
+  1091    1480743( 65.2%)    1728012( 76.1%)    1932518( 85.1%)
+  1092    1480446( 65.2%)    1727755( 76.1%)    1932284( 85.1%)
+  1093    1480152( 65.2%)    1727497( 76.1%)    1932031( 85.1%)
+  1094    1479849( 65.2%)    1727229( 76.0%)    1931775( 85.0%)
+  1095    1479584( 65.1%)    1726981( 76.0%)    1931552( 85.0%)
+  1096    1479294( 65.1%)    1726722( 76.0%)    1931353( 85.0%)
+  1097    1478994( 65.1%)    1726438( 76.0%)    1931108( 85.0%)
+  1098    1478743( 65.1%)    1726206( 76.0%)    1930878( 85.0%)
+  1099    1478485( 65.1%)    1725994( 76.0%)    1930662( 85.0%)
+  1100    1478218( 65.1%)    1725768( 76.0%)    1930456( 85.0%)
+  1101    1477959( 65.1%)    1725546( 76.0%)    1930232( 85.0%)
+  1102    1477699( 65.1%)    1725299( 76.0%)    1930031( 85.0%)
+  1103    1477454( 65.0%)    1725083( 75.9%)    1929818( 85.0%)
+  1104    1477243( 65.0%)    1724848( 75.9%)    1929607( 85.0%)
+  1105    1477000( 65.0%)    1724620( 75.9%)    1929403( 84.9%)
+  1106    1476768( 65.0%)    1724378( 75.9%)    1929208( 84.9%)
+  1107    1476529( 65.0%)    1724139( 75.9%)    1928997( 84.9%)
+  1108    1476291( 65.0%)    1723917( 75.9%)    1928776( 84.9%)
+  1109    1476011( 65.0%)    1723652( 75.9%)    1928532( 84.9%)
+  1110    1475712( 65.0%)    1723414( 75.9%)    1928297( 84.9%)
+  1111    1475472( 65.0%)    1723183( 75.9%)    1928097( 84.9%)
+  1112    1475186( 64.9%)    1722965( 75.9%)    1927897( 84.9%)
+  1113    1474912( 64.9%)    1722694( 75.8%)    1927675( 84.9%)
+  1114    1474629( 64.9%)    1722444( 75.8%)    1927472( 84.9%)
+  1115    1474351( 64.9%)    1722217( 75.8%)    1927260( 84.9%)
+  1116    1474064( 64.9%)    1721969( 75.8%)    1927045( 84.8%)
+  1117    1473772( 64.9%)    1721714( 75.8%)    1926806( 84.8%)
+  1118    1473451( 64.9%)    1721452( 75.8%)    1926576( 84.8%)
+  1119    1473166( 64.9%)    1721207( 75.8%)    1926323( 84.8%)
+  1120    1472873( 64.8%)    1720962( 75.8%)    1926114( 84.8%)
+  1121    1472539( 64.8%)    1720717( 75.8%)    1925887( 84.8%)
+  1122    1472245( 64.8%)    1720416( 75.7%)    1925639( 84.8%)
+  1123    1471894( 64.8%)    1720166( 75.7%)    1925397( 84.8%)
+  1124    1471545( 64.8%)    1719897( 75.7%)    1925130( 84.8%)
+  1125    1471117( 64.8%)    1719576( 75.7%)    1924887( 84.7%)
+  1126    1470701( 64.8%)    1719248( 75.7%)    1924608( 84.7%)
+  1127    1470120( 64.7%)    1718891( 75.7%)    1924312( 84.7%)
+  1128    1469740( 64.7%)    1718547( 75.7%)    1924013( 84.7%)
+  1129    1469322( 64.7%)    1718181( 75.6%)    1923710( 84.7%)
+  1130    1468904( 64.7%)    1717812( 75.6%)    1923393( 84.7%)
+  1131    1468478( 64.7%)    1717416( 75.6%)    1923111( 84.7%)
+  1132    1467990( 64.6%)    1717012( 75.6%)    1922750( 84.7%)
+  1133    1467519( 64.6%)    1716619( 75.6%)    1922403( 84.6%)
+  1134    1467012( 64.6%)    1716155( 75.6%)    1922002( 84.6%)
+  1135    1466519( 64.6%)    1715707( 75.5%)    1921594( 84.6%)
+  1136    1466060( 64.5%)    1715320( 75.5%)    1921252( 84.6%)
+  1137    1465613( 64.5%)    1714916( 75.5%)    1920934( 84.6%)
+  1138    1465150( 64.5%)    1714511( 75.5%)    1920600( 84.6%)
+  1139    1464689( 64.5%)    1714129( 75.5%)    1920267( 84.5%)
+  1140    1464103( 64.5%)    1713716( 75.4%)    1919933( 84.5%)
+  1141    1463614( 64.4%)    1713320( 75.4%)    1919582( 84.5%)
+  1142    1463123( 64.4%)    1712888( 75.4%)    1919187( 84.5%)
+  1143    1462628( 64.4%)    1712459( 75.4%)    1918816( 84.5%)
+  1144    1462111( 64.4%)    1712025( 75.4%)    1918468( 84.5%)
+  1145    1461613( 64.3%)    1711548( 75.4%)    1918131( 84.4%)
+  1146    1461102( 64.3%)    1711073( 75.3%)    1917782( 84.4%)
+  1147    1460267( 64.3%)    1710342( 75.3%)    1917091( 84.4%)
+  1148    1459759( 64.3%)    1709847( 75.3%)    1916684( 84.4%)
+  1149    1459236( 64.2%)    1709396( 75.3%)    1916297( 84.4%)
+  1150    1458751( 64.2%)    1708956( 75.2%)    1915900( 84.4%)
+  1151    1458268( 64.2%)    1708506( 75.2%)    1915531( 84.3%)
+  1152    1457765( 64.2%)    1708062( 75.2%)    1915149( 84.3%)
+  1153    1457243( 64.2%)    1707589( 75.2%)    1914787( 84.3%)
+  1154    1456695( 64.1%)    1707182( 75.2%)    1914449( 84.3%)
+  1155    1456076( 64.1%)    1706716( 75.1%)    1914038( 84.3%)
+  1156    1455507( 64.1%)    1706188( 75.1%)    1913600( 84.2%)
+  1157    1454962( 64.1%)    1705667( 75.1%)    1913223( 84.2%)
+  1158    1454402( 64.0%)    1705187( 75.1%)    1912819( 84.2%)
+  1159    1453666( 64.0%)    1704719( 75.1%)    1912432( 84.2%)
+  1160    1453150( 64.0%)    1704282( 75.0%)    1912010( 84.2%)
+  1161    1452623( 64.0%)    1703788( 75.0%)    1911586( 84.2%)
+  1162    1452126( 63.9%)    1703311( 75.0%)    1911203( 84.1%)
+  1163    1451554( 63.9%)    1702774( 75.0%)    1910758( 84.1%)
+  1164    1451055( 63.9%)    1702318( 74.9%)    1910379( 84.1%)
+  1165    1450602( 63.9%)    1701882( 74.9%)    1909985( 84.1%)
+  1166    1450104( 63.8%)    1701410( 74.9%)    1909588( 84.1%)
+  1167    1449586( 63.8%)    1700910( 74.9%)    1909156( 84.1%)
+  1168    1449094( 63.8%)    1700428( 74.9%)    1908736( 84.0%)
+  1169    1448549( 63.8%)    1699928( 74.8%)    1908330( 84.0%)
+  1170    1447921( 63.7%)    1699432( 74.8%)    1907883( 84.0%)
+  1171    1447362( 63.7%)    1698900( 74.8%)    1907430( 84.0%)
+  1172    1446819( 63.7%)    1698332( 74.8%)    1906951( 84.0%)
+  1173    1446234( 63.7%)    1697787( 74.7%)    1906479( 83.9%)
+  1174    1445602( 63.6%)    1697216( 74.7%)    1905982( 83.9%)
+  1175    1444939( 63.6%)    1696639( 74.7%)    1905469( 83.9%)
+  1176    1444268( 63.6%)    1695979( 74.7%)    1904907( 83.9%)
+  1177    1443577( 63.6%)    1695347( 74.6%)    1904347( 83.8%)
+  1178    1442906( 63.5%)    1694725( 74.6%)    1903792( 83.8%)
+  1179    1442231( 63.5%)    1694075( 74.6%)    1903224( 83.8%)
+  1180    1441506( 63.5%)    1693441( 74.6%)    1902665( 83.8%)
+  1181    1440775( 63.4%)    1692709( 74.5%)    1902009( 83.7%)
+  1182    1440111( 63.4%)    1692093( 74.5%)    1901450( 83.7%)
+  1183    1439478( 63.4%)    1691504( 74.5%)    1900940( 83.7%)
+  1184    1438808( 63.3%)    1690843( 74.4%)    1900376( 83.7%)
+  1185    1437981( 63.3%)    1690212( 74.4%)    1899825( 83.6%)
+  1186    1437383( 63.3%)    1689603( 74.4%)    1899308( 83.6%)
+  1187    1436792( 63.3%)    1689029( 74.4%)    1898780( 83.6%)
+  1188    1436184( 63.2%)    1688449( 74.3%)    1898261( 83.6%)
+  1189    1435612( 63.2%)    1687882( 74.3%)    1897738( 83.6%)
+  1190    1435096( 63.2%)    1687330( 74.3%)    1897235( 83.5%)
+  1191    1434532( 63.2%)    1686779( 74.3%)    1896721( 83.5%)
+  1192    1433961( 63.1%)    1686265( 74.2%)    1896177( 83.5%)
+  1193    1433447( 63.1%)    1685747( 74.2%)    1895728( 83.5%)
+  1194    1432931( 63.1%)    1685233( 74.2%)    1895288( 83.4%)
+  1195    1432429( 63.1%)    1684786( 74.2%)    1894883( 83.4%)
+  1196    1431932( 63.0%)    1684321( 74.2%)    1894470( 83.4%)
+  1197    1431457( 63.0%)    1683852( 74.1%)    1894037( 83.4%)
+  1198    1430991( 63.0%)    1683356( 74.1%)    1893583( 83.4%)
+  1199    1430492( 63.0%)    1682884( 74.1%)    1893159( 83.3%)
+  1200    1430025( 63.0%)    1682415( 74.1%)    1892754( 83.3%)
+  1201    1429577( 62.9%)    1681998( 74.1%)    1892345( 83.3%)
+  1202    1429106( 62.9%)    1681553( 74.0%)    1891933( 83.3%)
+  1203    1428620( 62.9%)    1681100( 74.0%)    1891537( 83.3%)
+  1204    1428041( 62.9%)    1680668( 74.0%)    1891102( 83.3%)
+  1205    1427426( 62.8%)    1680133( 74.0%)    1890651( 83.2%)
+  1206    1426755( 62.8%)    1679638( 73.9%)    1890241( 83.2%)
+  1207    1426238( 62.8%)    1679188( 73.9%)    1889833( 83.2%)
+  1208    1425745( 62.8%)    1678741( 73.9%)    1889430( 83.2%)
+  1209    1425292( 62.8%)    1678264( 73.9%)    1889030( 83.2%)
+  1210    1424833( 62.7%)    1677794( 73.9%)    1888625( 83.1%)
+  1211    1424402( 62.7%)    1677339( 73.8%)    1888224( 83.1%)
+  1212    1423999( 62.7%)    1676926( 73.8%)    1887822( 83.1%)
+  1213    1423544( 62.7%)    1676528( 73.8%)    1887440( 83.1%)
+  1214    1423132( 62.7%)    1676079( 73.8%)    1887025( 83.1%)
+  1215    1422630( 62.6%)    1675635( 73.8%)    1886628( 83.1%)
+  1216    1422234( 62.6%)    1675220( 73.8%)    1886264( 83.0%)
+  1217    1421806( 62.6%)    1674808( 73.7%)    1885875( 83.0%)
+  1218    1421444( 62.6%)    1674417( 73.7%)    1885521( 83.0%)
+  1219    1420967( 62.6%)    1673953( 73.7%)    1885100( 83.0%)
+  1220    1420566( 62.5%)    1673585( 73.7%)    1884773( 83.0%)
+  1221    1420083( 62.5%)    1673167( 73.7%)    1884411( 83.0%)
+  1222    1419422( 62.5%)    1672767( 73.6%)    1884031( 82.9%)
+  1223    1419064( 62.5%)    1672343( 73.6%)    1883682( 82.9%)
+  1224    1418678( 62.5%)    1671965( 73.6%)    1883323( 82.9%)
+  1225    1418254( 62.4%)    1671578( 73.6%)    1882916( 82.9%)
+  1226    1417791( 62.4%)    1671126( 73.6%)    1882508( 82.9%)
+  1227    1417380( 62.4%)    1670699( 73.6%)    1882078( 82.9%)
+  1228    1416889( 62.4%)    1670247( 73.5%)    1881670( 82.8%)
+  1229    1416445( 62.4%)    1669821( 73.5%)    1881279( 82.8%)
+  1230    1415922( 62.3%)    1669360( 73.5%)    1880830( 82.8%)
+  1231    1415550( 62.3%)    1668978( 73.5%)    1880492( 82.8%)
+  1232    1415160( 62.3%)    1668543( 73.5%)    1880098( 82.8%)
+  1233    1414730( 62.3%)    1668134( 73.4%)    1879707( 82.8%)
+  1234    1414311( 62.3%)    1667742( 73.4%)    1879383( 82.7%)
+  1235    1413687( 62.2%)    1667357( 73.4%)    1879049( 82.7%)
+  1236    1413223( 62.2%)    1666926( 73.4%)    1878655( 82.7%)
+  1237    1412777( 62.2%)    1666493( 73.4%)    1878268( 82.7%)
+  1238    1412354( 62.2%)    1666094( 73.4%)    1877898( 82.7%)
+  1239    1411930( 62.2%)    1665755( 73.3%)    1877586( 82.7%)
+  1240    1411450( 62.1%)    1665325( 73.3%)    1877220( 82.6%)
+  1241    1410971( 62.1%)    1664886( 73.3%)    1876815( 82.6%)
+  1242    1410428( 62.1%)    1664413( 73.3%)    1876400( 82.6%)
+  1243    1409907( 62.1%)    1663928( 73.3%)    1875969( 82.6%)
+  1244    1409409( 62.1%)    1663492( 73.2%)    1875600( 82.6%)
+  1245    1408694( 62.0%)    1663022( 73.2%)    1875259( 82.6%)
+  1246    1408218( 62.0%)    1662590( 73.2%)    1874904( 82.5%)
+  1247    1407711( 62.0%)    1662154( 73.2%)    1874571( 82.5%)
+  1248    1407222( 62.0%)    1661705( 73.2%)    1874205( 82.5%)
+  1249    1406758( 61.9%)    1661314( 73.1%)    1873885( 82.5%)
+  1250    1406294( 61.9%)    1660881( 73.1%)    1873546( 82.5%)
+  1251    1405875( 61.9%)    1660492( 73.1%)    1873242( 82.5%)
+  1252    1405444( 61.9%)    1660120( 73.1%)    1872927( 82.5%)
+  1253    1404989( 61.9%)    1659761( 73.1%)    1872616( 82.4%)
+  1254    1404352( 61.8%)    1659377( 73.1%)    1872314( 82.4%)
+  1255    1403953( 61.8%)    1658995( 73.0%)    1871990( 82.4%)
+  1256    1403512( 61.8%)    1658604( 73.0%)    1871658( 82.4%)
+  1257    1403071( 61.8%)    1658241( 73.0%)    1871344( 82.4%)
+  1258    1402616( 61.8%)    1657850( 73.0%)    1871006( 82.4%)
+  1259    1402157( 61.7%)    1657493( 73.0%)    1870687( 82.4%)
+  1260    1401496( 61.7%)    1657132( 73.0%)    1870378( 82.3%)
+  1261    1401054( 61.7%)    1656743( 72.9%)    1870053( 82.3%)
+  1262    1400605( 61.7%)    1656362( 72.9%)    1869752( 82.3%)
+  1263    1400186( 61.6%)    1655997( 72.9%)    1869437( 82.3%)
+  1264    1399722( 61.6%)    1655654( 72.9%)    1869126( 82.3%)
+  1265    1399078( 61.6%)    1655284( 72.9%)    1868850( 82.3%)
+  1266    1398693( 61.6%)    1654961( 72.9%)    1868558( 82.3%)
+  1267    1398276( 61.6%)    1654626( 72.8%)    1868300( 82.3%)
+  1268    1397882( 61.5%)    1654307( 72.8%)    1868013( 82.2%)
+  1269    1397284( 61.5%)    1654024( 72.8%)    1867762( 82.2%)
+  1270    1396910( 61.5%)    1653589( 72.8%)    1867499( 82.2%)
+  1271    1396526( 61.5%)    1653280( 72.8%)    1867256( 82.2%)
+  1272    1396087( 61.5%)    1652992( 72.8%)    1866991( 82.2%)
+  1273    1395439( 61.4%)    1652730( 72.8%)    1866727( 82.2%)
+  1274    1395039( 61.4%)    1652406( 72.7%)    1866496( 82.2%)
+  1275    1394419( 61.4%)    1652113( 72.7%)    1866195( 82.2%)
+  1276    1394050( 61.4%)    1651821( 72.7%)    1865942( 82.2%)
+  1277    1393421( 61.3%)    1651523( 72.7%)    1865696( 82.1%)
+  1278    1393035( 61.3%)    1651242( 72.7%)    1865437( 82.1%)
+  1279    1392449( 61.3%)    1650933( 72.7%)    1865181( 82.1%)
+  1280    1391830( 61.3%)    1650671( 72.7%)    1864921( 82.1%)
+  1281    1391221( 61.3%)    1650358( 72.7%)    1864648( 82.1%)
+  1282    1390537( 61.2%)    1650031( 72.6%)    1864369( 82.1%)
+  1283    1389692( 61.2%)    1649701( 72.6%)    1864082( 82.1%)
+  1284    1382524( 60.9%)    1649348( 72.6%)    1863797( 82.1%)
+  1285    1382147( 60.9%)    1649036( 72.6%)    1863502( 82.0%)
+  1286    1381785( 60.8%)    1648684( 72.6%)    1863217( 82.0%)
+  1287    1381451( 60.8%)    1648352( 72.6%)    1862910( 82.0%)
+  1288    1381042( 60.8%)    1648001( 72.6%)    1862624( 82.0%)
+  1289    1380673( 60.8%)    1647679( 72.5%)    1862345( 82.0%)
+  1290    1380277( 60.8%)    1647338( 72.5%)    1862057( 82.0%)
+  1291    1379943( 60.8%)    1646984( 72.5%)    1861769( 82.0%)
+  1292    1379630( 60.7%)    1646658( 72.5%)    1861490( 82.0%)
+  1293    1379330( 60.7%)    1646369( 72.5%)    1861220( 81.9%)
+  1294    1379014( 60.7%)    1646012( 72.5%)    1860925( 81.9%)
+  1295    1378662( 60.7%)    1645672( 72.5%)    1860602( 81.9%)
+  1296    1378325( 60.7%)    1645308( 72.4%)    1860307( 81.9%)
+  1297    1377983( 60.7%)    1644963( 72.4%)    1860018( 81.9%)
+  1298    1377635( 60.7%)    1644595( 72.4%)    1859709( 81.9%)
+  1299    1377275( 60.6%)    1644220( 72.4%)    1859378( 81.9%)
+  1300    1376882( 60.6%)    1643855( 72.4%)    1859027( 81.8%)
+  1301    1376499( 60.6%)    1643467( 72.4%)    1858661( 81.8%)
+  1302    1376100( 60.6%)    1643085( 72.3%)    1858323( 81.8%)
+  1303    1375714( 60.6%)    1642694( 72.3%)    1857995( 81.8%)
+  1304    1375316( 60.6%)    1642315( 72.3%)    1857671( 81.8%)
+  1305    1374980( 60.5%)    1641953( 72.3%)    1857354( 81.8%)
+  1306    1374659( 60.5%)    1641625( 72.3%)    1857080( 81.8%)
+  1307    1374357( 60.5%)    1641320( 72.3%)    1856801( 81.7%)
+  1308    1374036( 60.5%)    1641003( 72.2%)    1856518( 81.7%)
+  1309    1373736( 60.5%)    1640736( 72.2%)    1856258( 81.7%)
+  1310    1373469( 60.5%)    1640475( 72.2%)    1856006( 81.7%)
+  1311    1373196( 60.5%)    1640186( 72.2%)    1855737( 81.7%)
+  1312    1372920( 60.4%)    1639887( 72.2%)    1855480( 81.7%)
+  1313    1372636( 60.4%)    1639604( 72.2%)    1855234( 81.7%)
+  1314    1372362( 60.4%)    1639332( 72.2%)    1855028( 81.7%)
+  1315    1372042( 60.4%)    1639061( 72.2%)    1854789( 81.7%)
+  1316    1371548( 60.4%)    1638761( 72.1%)    1854521( 81.6%)
+  1317    1371256( 60.4%)    1638496( 72.1%)    1854291( 81.6%)
+  1318    1370986( 60.4%)    1638208( 72.1%)    1854039( 81.6%)
+  1319    1370711( 60.3%)    1637909( 72.1%)    1853776( 81.6%)
+  1320    1370439( 60.3%)    1637642( 72.1%)    1853500( 81.6%)
+  1321    1370157( 60.3%)    1637349( 72.1%)    1853244( 81.6%)
+  1322    1369850( 60.3%)    1637068( 72.1%)    1853021( 81.6%)
+  1323    1369568( 60.3%)    1636761( 72.1%)    1852785( 81.6%)
+  1324    1369287( 60.3%)    1636446( 72.0%)    1852519( 81.6%)
+  1325    1369007( 60.3%)    1636175( 72.0%)    1852243( 81.5%)
+  1326    1368700( 60.3%)    1635881( 72.0%)    1852012( 81.5%)
+  1327    1368413( 60.2%)    1635591( 72.0%)    1851744( 81.5%)
+  1328    1368136( 60.2%)    1635326( 72.0%)    1851506( 81.5%)
+  1329    1367849( 60.2%)    1635061( 72.0%)    1851262( 81.5%)
+  1330    1367608( 60.2%)    1634797( 72.0%)    1851027( 81.5%)
+  1331    1367336( 60.2%)    1634545( 72.0%)    1850786( 81.5%)
+  1332    1367055( 60.2%)    1634273( 72.0%)    1850557( 81.5%)
+  1333    1366769( 60.2%)    1633993( 71.9%)    1850341( 81.5%)
+  1334    1366480( 60.2%)    1633735( 71.9%)    1850111( 81.5%)
+  1335    1366152( 60.1%)    1633419( 71.9%)    1849811( 81.4%)
+  1336    1365813( 60.1%)    1633073( 71.9%)    1849537( 81.4%)
+  1337    1365480( 60.1%)    1632744( 71.9%)    1849279( 81.4%)
+  1338    1365079( 60.1%)    1632323( 71.9%)    1848929( 81.4%)
+  1339    1364773( 60.1%)    1631975( 71.9%)    1848652( 81.4%)
+  1340    1364353( 60.1%)    1631560( 71.8%)    1848300( 81.4%)
+  1341    1363978( 60.1%)    1631207( 71.8%)    1847985( 81.4%)
+  1342    1363667( 60.0%)    1630895( 71.8%)    1847707( 81.3%)
+  1343    1363396( 60.0%)    1630598( 71.8%)    1847476( 81.3%)
+  1344    1363080( 60.0%)    1630293( 71.8%)    1847225( 81.3%)
+  1345    1362756( 60.0%)    1629989( 71.8%)    1846983( 81.3%)
+  1346    1362384( 60.0%)    1629663( 71.7%)    1846683( 81.3%)
+  1347    1361974( 60.0%)    1629298( 71.7%)    1846391( 81.3%)
+  1348    1361566( 59.9%)    1628892( 71.7%)    1846056( 81.3%)
+  1349    1361129( 59.9%)    1628467( 71.7%)    1845727( 81.3%)
+  1350    1360694( 59.9%)    1628034( 71.7%)    1845403( 81.2%)
+  1351    1360221( 59.9%)    1627634( 71.7%)    1845116( 81.2%)
+  1352    1359802( 59.9%)    1627241( 71.6%)    1844802( 81.2%)
+  1353    1359402( 59.8%)    1626836( 71.6%)    1844486( 81.2%)
+  1354    1358872( 59.8%)    1626319( 71.6%)    1844048( 81.2%)
+  1355    1358387( 59.8%)    1625832( 71.6%)    1843592( 81.2%)
+  1356    1358018( 59.8%)    1625409( 71.6%)    1843239( 81.2%)
+  1357    1357666( 59.8%)    1625055( 71.5%)    1842900( 81.1%)
+  1358    1357245( 59.8%)    1624605( 71.5%)    1842524( 81.1%)
+  1359    1356859( 59.7%)    1624223( 71.5%)    1842203( 81.1%)
+  1360    1356532( 59.7%)    1623877( 71.5%)    1841890( 81.1%)
+  1361    1356206( 59.7%)    1623546( 71.5%)    1841597( 81.1%)
+  1362    1355882( 59.7%)    1623233( 71.5%)    1841315( 81.1%)
+  1363    1355526( 59.7%)    1622866( 71.4%)    1840995( 81.1%)
+  1364    1355150( 59.7%)    1622455( 71.4%)    1840655( 81.0%)
+  1365    1354745( 59.6%)    1622066( 71.4%)    1840296( 81.0%)
+  1366    1354346( 59.6%)    1621674( 71.4%)    1839947( 81.0%)
+  1367    1353983( 59.6%)    1621331( 71.4%)    1839643( 81.0%)
+  1368    1353668( 59.6%)    1621005( 71.4%)    1839348( 81.0%)
+  1369    1353210( 59.6%)    1620546( 71.3%)    1838887( 81.0%)
+  1370    1352435( 59.5%)    1619744( 71.3%)    1838126( 80.9%)
+  1371    1352034( 59.5%)    1619333( 71.3%)    1837756( 80.9%)
+  1372    1351648( 59.5%)    1618920( 71.3%)    1837392( 80.9%)
+  1373    1351246( 59.5%)    1618476( 71.3%)    1836966( 80.9%)
+  1374    1350812( 59.5%)    1618016( 71.2%)    1836525( 80.9%)
+  1375    1350103( 59.4%)    1617262( 71.2%)    1835761( 80.8%)
+  1376    1345011( 59.2%)    1611937( 71.0%)    1830338( 80.6%)
+  1377    1343713( 59.2%)    1610472( 70.9%)    1828820( 80.5%)
+  1378    1342982( 59.1%)    1609685( 70.9%)    1827983( 80.5%)
+  1379    1342579( 59.1%)    1609228( 70.8%)    1827514( 80.5%)
+  1380    1342235( 59.1%)    1608865( 70.8%)    1827160( 80.4%)
+  1381    1341867( 59.1%)    1608447( 70.8%)    1826777( 80.4%)
+  1382    1341411( 59.1%)    1608010( 70.8%)    1826353( 80.4%)
+  1383    1340832( 59.0%)    1607437( 70.8%)    1825823( 80.4%)
+  1384    1340389( 59.0%)    1607010( 70.8%)    1825450( 80.4%)
+  1385    1339985( 59.0%)    1606661( 70.7%)    1825105( 80.4%)
+  1386    1339635( 59.0%)    1606315( 70.7%)    1824800( 80.3%)
+  1387    1339263( 59.0%)    1605970( 70.7%)    1824488( 80.3%)
+  1388    1338886( 58.9%)    1605594( 70.7%)    1824183( 80.3%)
+  1389    1338506( 58.9%)    1605237( 70.7%)    1823873( 80.3%)
+  1390    1338164( 58.9%)    1604880( 70.7%)    1823578( 80.3%)
+  1391    1337803( 58.9%)    1604552( 70.6%)    1823274( 80.3%)
+  1392    1337451( 58.9%)    1604182( 70.6%)    1822985( 80.3%)
+  1393    1337067( 58.9%)    1603860( 70.6%)    1822672( 80.2%)
+  1394    1336708( 58.9%)    1603488( 70.6%)    1822329( 80.2%)
+  1395    1336324( 58.8%)    1603122( 70.6%)    1822019( 80.2%)
+  1396    1335902( 58.8%)    1602711( 70.6%)    1821671( 80.2%)
+  1397    1335457( 58.8%)    1602235( 70.5%)    1821296( 80.2%)
+  1398    1335006( 58.8%)    1601775( 70.5%)    1820877( 80.2%)
+  1399    1334516( 58.8%)    1601323( 70.5%)    1820429( 80.1%)
+  1400    1333973( 58.7%)    1600743( 70.5%)    1819906( 80.1%)
+  1401    1332343( 58.7%)    1599005( 70.4%)    1818209( 80.0%)
+  1402    1327838( 58.5%)    1594216( 70.2%)    1813364( 79.8%)
+  1403    1326635( 58.4%)    1592816( 70.1%)    1811878( 79.8%)
+  1404    1325884( 58.4%)    1591918( 70.1%)    1810976( 79.7%)
+  1405    1324999( 58.3%)    1590946( 70.0%)    1809977( 79.7%)
+  1406    1324413( 58.3%)    1590306( 70.0%)    1809325( 79.7%)
+  1407    1323928( 58.3%)    1589712( 70.0%)    1808782( 79.6%)
+  1408    1323393( 58.3%)    1589114( 70.0%)    1808212( 79.6%)
+  1409    1322813( 58.2%)    1588497( 69.9%)    1807570( 79.6%)
+  1410    1322200( 58.2%)    1587833( 69.9%)    1806910( 79.6%)
+  1411    1321497( 58.2%)    1586973( 69.9%)    1806022( 79.5%)
+  1412    1319782( 58.1%)    1585046( 69.8%)    1804015( 79.4%)
+  1413    1318553( 58.1%)    1583583( 69.7%)    1802412( 79.4%)
+  1414    1314773( 57.9%)    1579416( 69.5%)    1798055( 79.2%)
+  1415    1313437( 57.8%)    1577744( 69.5%)    1796204( 79.1%)
+  1416    1312420( 57.8%)    1576419( 69.4%)    1794661( 79.0%)
+  1417    1310058( 57.7%)    1573654( 69.3%)    1791693( 78.9%)
+  1418    1307884( 57.6%)    1571089( 69.2%)    1788916( 78.8%)
+  1419    1306311( 57.5%)    1569163( 69.1%)    1786761( 78.7%)
+  1420    1304710( 57.4%)    1567172( 69.0%)    1784536( 78.6%)
+  1421    1302768( 57.4%)    1564896( 68.9%)    1782009( 78.5%)
+  1422    1300631( 57.3%)    1562388( 68.8%)    1779254( 78.3%)
+  1423    1298605( 57.2%)    1559927( 68.7%)    1776530( 78.2%)
+  1424    1291599( 56.9%)    1552343( 68.3%)    1768609( 77.9%)
+  1425    1288781( 56.7%)    1549043( 68.2%)    1764929( 77.7%)
+  1426    1284578( 56.6%)    1544289( 68.0%)    1759865( 77.5%)
+  1427    1281547( 56.4%)    1540805( 67.8%)    1756039( 77.3%)
+  1428    1278707( 56.3%)    1537477( 67.7%)    1752444( 77.2%)
+  1429    1275375( 56.2%)    1533750( 67.5%)    1748468( 77.0%)
+  1430    1274254( 56.1%)    1532348( 67.5%)    1746902( 76.9%)
+  1431    1273600( 56.1%)    1531498( 67.4%)    1745936( 76.9%)
+  1432    1273219( 56.1%)    1530983( 67.4%)    1745356( 76.8%)
+  1433    1272883( 56.0%)    1530598( 67.4%)    1744920( 76.8%)
+  1434    1272570( 56.0%)    1530241( 67.4%)    1744531( 76.8%)
+  1435    1272219( 56.0%)    1529888( 67.4%)    1744163( 76.8%)
+  1436    1271929( 56.0%)    1529553( 67.3%)    1743828( 76.8%)
+  1437    1271536( 56.0%)    1529046( 67.3%)    1743318( 76.8%)
+  1438    1270836( 56.0%)    1528269( 67.3%)    1742504( 76.7%)
+  1439    1270255( 55.9%)    1527629( 67.3%)    1741830( 76.7%)
+  1440    1269317( 55.9%)    1526590( 67.2%)    1740749( 76.6%)
+  1441    1268661( 55.9%)    1525880( 67.2%)    1739978( 76.6%)
+  1442    1267906( 55.8%)    1525037( 67.1%)    1739070( 76.6%)
+  1443    1266974( 55.8%)    1523994( 67.1%)    1737956( 76.5%)
+  1444    1265796( 55.7%)    1522710( 67.0%)    1736586( 76.5%)
+  1445    1265154( 55.7%)    1521984( 67.0%)    1735792( 76.4%)
+  1446    1264659( 55.7%)    1521397( 67.0%)    1735138( 76.4%)
+  1447    1263952( 55.6%)    1520627( 66.9%)    1734337( 76.4%)
+  1448    1263371( 55.6%)    1520031( 66.9%)    1733689( 76.3%)
+  1449    1262712( 55.6%)    1519295( 66.9%)    1732918( 76.3%)
+  1450    1261463( 55.5%)    1518002( 66.8%)    1731548( 76.2%)
+  1451    1260749( 55.5%)    1517243( 66.8%)    1730760( 76.2%)
+  1452    1260114( 55.5%)    1516545( 66.8%)    1730064( 76.2%)
+  1453    1259029( 55.4%)    1515427( 66.7%)    1728866( 76.1%)
+  1454    1258314( 55.4%)    1514626( 66.7%)    1728043( 76.1%)
+  1455    1257668( 55.4%)    1513977( 66.7%)    1727334( 76.0%)
+  1456    1257111( 55.3%)    1513388( 66.6%)    1726719( 76.0%)
+  1457    1256451( 55.3%)    1512690( 66.6%)    1726053( 76.0%)
+  1458    1255778( 55.3%)    1512015( 66.6%)    1725345( 76.0%)
+  1459    1255037( 55.3%)    1511256( 66.5%)    1724530( 75.9%)
+  1460    1253995( 55.2%)    1510157( 66.5%)    1723379( 75.9%)
+  1461    1253041( 55.2%)    1509105( 66.4%)    1722282( 75.8%)
+  1462    1252192( 55.1%)    1508171( 66.4%)    1721263( 75.8%)
+  1463    1251225( 55.1%)    1507110( 66.4%)    1720119( 75.7%)
+  1464    1249614( 55.0%)    1505271( 66.3%)    1718130( 75.6%)
+  1465    1246055( 54.9%)    1501251( 66.1%)    1713912( 75.5%)
+  1466    1241060( 54.6%)    1495620( 65.8%)    1707919( 75.2%)
+  1467    1237889( 54.5%)    1491787( 65.7%)    1703604( 75.0%)
+  1468    1233876( 54.3%)    1486973( 65.5%)    1698191( 74.8%)
+  1469    1229535( 54.1%)    1481792( 65.2%)    1692398( 74.5%)
+  1470    1225435( 54.0%)    1476803( 65.0%)    1686800( 74.3%)
+  1471    1219812( 53.7%)    1470259( 64.7%)    1679628( 73.9%)
+  1472    1217191( 53.6%)    1466901( 64.6%)    1675778( 73.8%)
+  1473    1215329( 53.5%)    1464481( 64.5%)    1672925( 73.7%)
+  1474    1214050( 53.5%)    1462796( 64.4%)    1670851( 73.6%)
+  1475    1211563( 53.3%)    1459912( 64.3%)    1667584( 73.4%)
+  1476    1209973( 53.3%)    1457835( 64.2%)    1665131( 73.3%)
+  1477    1207863( 53.2%)    1455215( 64.1%)    1662072( 73.2%)
+  1478    1202938( 53.0%)    1449540( 63.8%)    1655908( 72.9%)
+  1479    1197029( 52.7%)    1442731( 63.5%)    1648514( 72.6%)
+  1480    1193377( 52.5%)    1438189( 63.3%)    1643249( 72.3%)
+  1481    1189116( 52.4%)    1432996( 63.1%)    1637310( 72.1%)
+  1482    1185425( 52.2%)    1428428( 62.9%)    1632064( 71.9%)
+  1483    1182783( 52.1%)    1424980( 62.7%)    1627988( 71.7%)
+  1484    1180459( 52.0%)    1422098( 62.6%)    1624559( 71.5%)
+  1485    1178579( 51.9%)    1419741( 62.5%)    1621708( 71.4%)
+  1486    1176060( 51.8%)    1416676( 62.4%)    1618221( 71.2%)
+  1487    1173815( 51.7%)    1413979( 62.3%)    1615109( 71.1%)
+  1488    1171637( 51.6%)    1411339( 62.1%)    1612031( 71.0%)
+  1489    1168555( 51.4%)    1407739( 62.0%)    1607939( 70.8%)
+  1490    1165538( 51.3%)    1404139( 61.8%)    1603796( 70.6%)
+  1491    1162122( 51.2%)    1400144( 61.6%)    1599184( 70.4%)
+  1492    1156529( 50.9%)    1393777( 61.4%)    1592089( 70.1%)
+  1493    1150173( 50.6%)    1386409( 61.0%)    1583897( 69.7%)
+  1494    1141404( 50.3%)    1376299( 60.6%)    1572732( 69.2%)
+  1495    1130422( 49.8%)    1363420( 60.0%)    1558499( 68.6%)
+  1496    1117347( 49.2%)    1348016( 59.3%)    1541389( 67.9%)
+  1497    1101191( 48.5%)    1328915( 58.5%)    1520291( 66.9%)
+  1498    1078110( 47.5%)    1302351( 57.3%)    1491353( 65.7%)
+  1499    1067112( 47.0%)    1288327( 56.7%)    1474949( 64.9%)
+  1500    1056098( 46.5%)    1274509( 56.1%)    1458715( 64.2%)
+  1501    1042983( 45.9%)    1258740( 55.4%)    1440731( 63.4%)
+  1502    1027700( 45.2%)    1240670( 54.6%)    1420348( 62.5%)
+  1503    1007809( 44.4%)    1217621( 53.6%)    1394808( 61.4%)
+  1504     985378( 43.4%)    1191619( 52.5%)    1366177( 60.1%)
+  1505     965720( 42.5%)    1168525( 51.4%)    1340499( 59.0%)
+  1506     951256( 41.9%)    1150900( 50.7%)    1320222( 58.1%)
+  1507     936574( 41.2%)    1133230( 49.9%)    1299957( 57.2%)
+  1508     919083( 40.5%)    1112493( 49.0%)    1276514( 56.2%)
+  1509     901472( 39.7%)    1091420( 48.1%)    1252599( 55.1%)
+  1510     878659( 38.7%)    1064664( 46.9%)    1222790( 53.8%)
+  1511     857981( 37.8%)    1039834( 45.8%)    1194688( 52.6%)
+  1512     838603( 36.9%)    1016268( 44.7%)    1167602( 51.4%)
+  1513     813403( 35.8%)     986366( 43.4%)    1133956( 49.9%)
+  1514     783384( 34.5%)     950926( 41.9%)    1094418( 48.2%)
+  1515     753325( 33.2%)     914900( 40.3%)    1053847( 46.4%)
+  1516     721436( 31.8%)     876626( 38.6%)    1010756( 44.5%)
+  1517     690929( 30.4%)     839675( 37.0%)     968666( 42.6%)
+  1518     663456( 29.2%)     805891( 35.5%)     929928( 40.9%)
+  1519     634673( 27.9%)     770853( 33.9%)     889999( 39.2%)
+  1520     607412( 26.7%)     737765( 32.5%)     852190( 37.5%)
+  1521     582682( 25.7%)     707335( 31.1%)     817119( 36.0%)
+  1522     556681( 24.5%)     675987( 29.8%)     781289( 34.4%)
+  1523     534778( 23.5%)     648835( 28.6%)     749748( 33.0%)
+  1524     514030( 22.6%)     622925( 27.4%)     719534( 31.7%)
+  1525     492998( 21.7%)     596659( 26.3%)     688872( 30.3%)
+  1526     471634( 20.8%)     569908( 25.1%)     657714( 29.0%)
+  1527     454143( 20.0%)     547135( 24.1%)     630551( 27.8%)
+  1528     437056( 19.2%)     524924( 23.1%)     604058( 26.6%)
+  1529     418529( 18.4%)     501355( 22.1%)     576276( 25.4%)
+  1530     405631( 17.9%)     483924( 21.3%)     554904( 24.4%)
+  1531     388801( 17.1%)     462934( 20.4%)     530407( 23.4%)
+  1532     376537( 16.6%)     447133( 19.7%)     511263( 22.5%)
+  1533     367970( 16.2%)     435670( 19.2%)     496894( 21.9%)
+  1534     360133( 15.9%)     425360( 18.7%)     484138( 21.3%)
+  1535     353840( 15.6%)     417002( 18.4%)     473608( 20.9%)
+  1536     348074( 15.3%)     409356( 18.0%)     463948( 20.4%)
+  1537     342765( 15.1%)     402307( 17.7%)     455169( 20.0%)
+  1538     337248( 14.8%)     395195( 17.4%)     446314( 19.6%)
+  1539     331375( 14.6%)     387781( 17.1%)     437358( 19.3%)
+  1540     326534( 14.4%)     381571( 16.8%)     429719( 18.9%)
+  1541     321096( 14.1%)     374824( 16.5%)     421609( 18.6%)
+  1542     315300( 13.9%)     367819( 16.2%)     413342( 18.2%)
+  1543     309873( 13.6%)     361285( 15.9%)     405731( 17.9%)
+  1544     304916( 13.4%)     355376( 15.6%)     398907( 17.6%)
+  1545     302323( 13.3%)     352126( 15.5%)     394893( 17.4%)
+  1546     300345( 13.2%)     349685( 15.4%)     391807( 17.2%)
+  1547     297667( 13.1%)     346563( 15.3%)     388186( 17.1%)
+  1548     296490( 13.1%)     344983( 15.2%)     386194( 17.0%)
+  1549     295054( 13.0%)     343259( 15.1%)     384110( 16.9%)
+  1550     292975( 12.9%)     341045( 15.0%)     381577( 16.8%)
+  1551     291833( 12.8%)     339726( 15.0%)     380007( 16.7%)
+  1552     290640( 12.8%)     338462( 14.9%)     378526( 16.7%)
+  1553     289574( 12.7%)     337263( 14.8%)     377158( 16.6%)
+  1554     288474( 12.7%)     336002( 14.8%)     375728( 16.5%)
+  1555     286706( 12.6%)     334021( 14.7%)     373544( 16.4%)
+  1556     284719( 12.5%)     331816( 14.6%)     371153( 16.3%)
+  1557     282928( 12.5%)     329817( 14.5%)     368958( 16.2%)
+  1558     281096( 12.4%)     327775( 14.4%)     366699( 16.1%)
+  1559     279300( 12.3%)     325715( 14.3%)     364398( 16.0%)
+  1560     276545( 12.2%)     322662( 14.2%)     361039( 15.9%)
+  1561     274284( 12.1%)     319947( 14.1%)     357913( 15.8%)
+  1562     269753( 11.9%)     314623( 13.9%)     352093( 15.5%)
+  1563     255828( 11.3%)     299283( 13.2%)     336063( 14.8%)
+  1564     250182( 11.0%)     292537( 12.9%)     328635( 14.5%)
+  1565     246451( 10.9%)     287936( 12.7%)     323338( 14.2%)
+  1566     241918( 10.7%)     282713( 12.4%)     317518( 14.0%)
+  1567     237919( 10.5%)     278037( 12.2%)     312337( 13.8%)
+  1568     234338( 10.3%)     273779( 12.1%)     307545( 13.5%)
+  1569     230718( 10.2%)     269533( 11.9%)     302848( 13.3%)
+  1570     227321( 10.0%)     265534( 11.7%)     298431( 13.1%)
+  1571     224693(  9.9%)     262378( 11.6%)     294829( 13.0%)
+  1572     222010(  9.8%)     259204( 11.4%)     291256( 12.8%)
+  1573     219134(  9.6%)     255848( 11.3%)     287509( 12.7%)
+  1574     216399(  9.5%)     252604( 11.1%)     283888( 12.5%)
+  1575     212758(  9.4%)     248390( 10.9%)     279305( 12.3%)
+  1576     209970(  9.2%)     245004( 10.8%)     275435( 12.1%)
+  1577     204495(  9.0%)     238721( 10.5%)     268621( 11.8%)
+  1578     198436(  8.7%)     231758( 10.2%)     261082( 11.5%)
+  1579     193971(  8.5%)     226442( 10.0%)     255166( 11.2%)
+  1580     191158(  8.4%)     222917(  9.8%)     251106( 11.1%)
+  1581     188544(  8.3%)     219735(  9.7%)     247439( 10.9%)
+  1582     186669(  8.2%)     217425(  9.6%)     244782( 10.8%)
+  1583     185280(  8.2%)     215678(  9.5%)     242699( 10.7%)
+  1584     182772(  8.0%)     212815(  9.4%)     239561( 10.5%)
+  1585     181430(  8.0%)     211152(  9.3%)     237606( 10.5%)
+  1586     178810(  7.9%)     208164(  9.2%)     234357( 10.3%)
+  1587     175715(  7.7%)     204704(  9.0%)     230632( 10.2%)
+  1588     174537(  7.7%)     203197(  8.9%)     228878( 10.1%)
+  1589     172386(  7.6%)     200737(  8.8%)     226144( 10.0%)
+  1590     170502(  7.5%)     198542(  8.7%)     223701(  9.8%)
+  1591     169514(  7.5%)     197290(  8.7%)     222215(  9.8%)
+  1592     167689(  7.4%)     195211(  8.6%)     219872(  9.7%)
+  1593     165611(  7.3%)     192803(  8.5%)     217231(  9.6%)
+  1594     163345(  7.2%)     190208(  8.4%)     214415(  9.4%)
+  1595     162246(  7.1%)     188806(  8.3%)     212773(  9.4%)
+  1596     159329(  7.0%)     185577(  8.2%)     209342(  9.2%)
+  1597     158475(  7.0%)     184500(  8.1%)     208092(  9.2%)
+  1598     157778(  6.9%)     183659(  8.1%)     207119(  9.1%)
+  1599     157225(  6.9%)     182970(  8.1%)     206306(  9.1%)
+  1600     156064(  6.9%)     181643(  8.0%)     204844(  9.0%)
+  1601     154721(  6.8%)     180109(  7.9%)     203200(  8.9%)
+  1602     153513(  6.8%)     178757(  7.9%)     201717(  8.9%)
+  1603     152959(  6.7%)     178084(  7.8%)     200924(  8.8%)
+  1604     152439(  6.7%)     177470(  7.8%)     200221(  8.8%)
+  1605     151887(  6.7%)     176834(  7.8%)     199504(  8.8%)
+  1606     151369(  6.7%)     176221(  7.8%)     198797(  8.8%)
+  1607     149134(  6.6%)     173789(  7.7%)     196219(  8.6%)
+  1608     147839(  6.5%)     172262(  7.6%)     194510(  8.6%)
+  1609     146471(  6.4%)     170645(  7.5%)     192744(  8.5%)
+  1610     143987(  6.3%)     167868(  7.4%)     189775(  8.4%)
+  1611     142116(  6.3%)     165715(  7.3%)     187462(  8.3%)
+  1612     141293(  6.2%)     164684(  7.3%)     186268(  8.2%)
+  1613     140628(  6.2%)     163810(  7.2%)     185232(  8.2%)
+  1614     139744(  6.2%)     162753(  7.2%)     184025(  8.1%)
+  1615     137685(  6.1%)     160521(  7.1%)     181613(  8.0%)
+  1616     136356(  6.0%)     158969(  7.0%)     179884(  7.9%)
+  1617     135394(  6.0%)     157821(  6.9%)     178623(  7.9%)
+  1618     134562(  5.9%)     156838(  6.9%)     177504(  7.8%)
+  1619     133463(  5.9%)     155595(  6.9%)     176149(  7.8%)
+  1620     132539(  5.8%)     154541(  6.8%)     174976(  7.7%)
+  1621     132125(  5.8%)     154031(  6.8%)     174360(  7.7%)
+  1622     131858(  5.8%)     153697(  6.8%)     173931(  7.7%)
+  1623     131563(  5.8%)     153339(  6.8%)     173496(  7.6%)
+  1624     130834(  5.8%)     152507(  6.7%)     172569(  7.6%)
+  1625     129853(  5.7%)     151428(  6.7%)     171392(  7.5%)
+  1626     129291(  5.7%)     150720(  6.6%)     170568(  7.5%)
+  1627     128716(  5.7%)     149982(  6.6%)     169683(  7.5%)
+  1628     125930(  5.5%)     146927(  6.5%)     166414(  7.3%)
+  1629     123687(  5.4%)     144384(  6.4%)     163653(  7.2%)
+  1630     122677(  5.4%)     143093(  6.3%)     162134(  7.1%)
+  1631     122068(  5.4%)     142251(  6.3%)     161122(  7.1%)
+  1632     120145(  5.3%)     140066(  6.2%)     158773(  7.0%)
+  1633     119303(  5.3%)     139023(  6.1%)     157571(  6.9%)
+  1634     118853(  5.2%)     138416(  6.1%)     156841(  6.9%)
+  1635     118629(  5.2%)     138090(  6.1%)     156407(  6.9%)
+  1636     118491(  5.2%)     137877(  6.1%)     156114(  6.9%)
+  1637     118240(  5.2%)     137560(  6.1%)     155735(  6.9%)
+  1638     118066(  5.2%)     137310(  6.0%)     155432(  6.8%)
+  1639     117825(  5.2%)     137020(  6.0%)     155068(  6.8%)
+  1640     117139(  5.2%)     136230(  6.0%)     154195(  6.8%)
+  1641     115575(  5.1%)     134513(  5.9%)     152397(  6.7%)
+  1642     115139(  5.1%)     133977(  5.9%)     151768(  6.7%)
+  1643     114955(  5.1%)     133734(  5.9%)     151465(  6.7%)
+  1644     114810(  5.1%)     133541(  5.9%)     151221(  6.7%)
+  1645     114674(  5.0%)     133381(  5.9%)     151021(  6.6%)
+  1646     114561(  5.0%)     133249(  5.9%)     150857(  6.6%)
+  1647     114469(  5.0%)     133137(  5.9%)     150724(  6.6%)
+  1648     114367(  5.0%)     133024(  5.9%)     150581(  6.6%)
+  1649     114295(  5.0%)     132935(  5.9%)     150453(  6.6%)
+  1650     114214(  5.0%)     132836(  5.8%)     150337(  6.6%)
+  1651     113852(  5.0%)     132431(  5.8%)     149923(  6.6%)
+  1652     113674(  5.0%)     132214(  5.8%)     149684(  6.6%)
+  1653     113550(  5.0%)     132063(  5.8%)     149491(  6.6%)
+  1654     113160(  5.0%)     131633(  5.8%)     149016(  6.6%)
+  1655     112981(  5.0%)     131435(  5.8%)     148787(  6.6%)
+  1656     112895(  5.0%)     131328(  5.8%)     148659(  6.5%)
+  1657     112833(  5.0%)     131261(  5.8%)     148568(  6.5%)
+  1658     112800(  5.0%)     131222(  5.8%)     148514(  6.5%)
+  1659     112760(  5.0%)     131180(  5.8%)     148456(  6.5%)
+  1660     112719(  5.0%)     131131(  5.8%)     148405(  6.5%)
+  1661     112674(  5.0%)     131073(  5.8%)     148346(  6.5%)
+  1662     112638(  5.0%)     131029(  5.8%)     148302(  6.5%)
+  1663     112609(  5.0%)     131002(  5.8%)     148270(  6.5%)
+  1664     112586(  5.0%)     130978(  5.8%)     148239(  6.5%)
+  1665     112569(  5.0%)     130956(  5.8%)     148210(  6.5%)
+  1666     112538(  5.0%)     130915(  5.8%)     148173(  6.5%)
+  1667     112495(  5.0%)     130869(  5.8%)     148119(  6.5%)
+  1668     112444(  5.0%)     130813(  5.8%)     148053(  6.5%)
+  1669     112360(  4.9%)     130726(  5.8%)     147960(  6.5%)
+  1670     112310(  4.9%)     130664(  5.8%)     147884(  6.5%)
+  1671     112236(  4.9%)     130587(  5.7%)     147799(  6.5%)
+  1672     112174(  4.9%)     130528(  5.7%)     147725(  6.5%)
+  1673     112071(  4.9%)     130415(  5.7%)     147608(  6.5%)
+  1674     111966(  4.9%)     130286(  5.7%)     147470(  6.5%)
+  1675     111888(  4.9%)     130194(  5.7%)     147365(  6.5%)
+  1676     111828(  4.9%)     130112(  5.7%)     147274(  6.5%)
+  1677     111714(  4.9%)     130001(  5.7%)     147153(  6.5%)
+  1678     111644(  4.9%)     129916(  5.7%)     147066(  6.5%)
+  1679     111586(  4.9%)     129843(  5.7%)     146989(  6.5%)
+  1680     111444(  4.9%)     129690(  5.7%)     146831(  6.5%)
+  1681     111332(  4.9%)     129563(  5.7%)     146697(  6.5%)
+  1682     111242(  4.9%)     129461(  5.7%)     146590(  6.5%)
+  1683     111172(  4.9%)     129382(  5.7%)     146502(  6.4%)
+  1684     111135(  4.9%)     129334(  5.7%)     146447(  6.4%)
+  1685     111079(  4.9%)     129287(  5.7%)     146395(  6.4%)
+  1686     110969(  4.9%)     129156(  5.7%)     146261(  6.4%)
+  1687     110901(  4.9%)     129082(  5.7%)     146187(  6.4%)
+  1688     110851(  4.9%)     129021(  5.7%)     146133(  6.4%)
+  1689     110795(  4.9%)     128967(  5.7%)     146064(  6.4%)
+  1690     110575(  4.9%)     128725(  5.7%)     145820(  6.4%)
+  1691     110487(  4.9%)     128625(  5.7%)     145704(  6.4%)
+  1692     110390(  4.9%)     128504(  5.7%)     145581(  6.4%)
+  1693     110211(  4.9%)     128300(  5.6%)     145354(  6.4%)
+  1694     110064(  4.8%)     128123(  5.6%)     145160(  6.4%)
+  1695     109919(  4.8%)     127945(  5.6%)     144962(  6.4%)
+  1696     109549(  4.8%)     127516(  5.6%)     144512(  6.4%)
+  1697     109252(  4.8%)     127178(  5.6%)     144146(  6.3%)
+  1698     109115(  4.8%)     126989(  5.6%)     143928(  6.3%)
+  1699     108942(  4.8%)     126787(  5.6%)     143703(  6.3%)
+  1700     108855(  4.8%)     126674(  5.6%)     143562(  6.3%)
+  1701     108738(  4.8%)     126532(  5.6%)     143385(  6.3%)
+  1702     108072(  4.8%)     125811(  5.5%)     142644(  6.3%)
+  1703     107817(  4.7%)     125497(  5.5%)     142296(  6.3%)
+  1704     107702(  4.7%)     125358(  5.5%)     142144(  6.3%)
+  1705     107627(  4.7%)     125281(  5.5%)     142059(  6.3%)
+  1706     107587(  4.7%)     125237(  5.5%)     141998(  6.3%)
+  1707     107559(  4.7%)     125205(  5.5%)     141959(  6.2%)
+  1708     107535(  4.7%)     125173(  5.5%)     141916(  6.2%)
+  1709     107509(  4.7%)     125141(  5.5%)     141877(  6.2%)
+  1710     107492(  4.7%)     125123(  5.5%)     141859(  6.2%)
+  1711     107478(  4.7%)     125108(  5.5%)     141836(  6.2%)
+  1712     107459(  4.7%)     125093(  5.5%)     141815(  6.2%)
+  1713     107439(  4.7%)     125072(  5.5%)     141796(  6.2%)
+  1714     107416(  4.7%)     125043(  5.5%)     141765(  6.2%)
+  1715     107399(  4.7%)     125024(  5.5%)     141748(  6.2%)
+  1716     107391(  4.7%)     125007(  5.5%)     141728(  6.2%)
+  1717     107372(  4.7%)     124990(  5.5%)     141711(  6.2%)
+  1718     107348(  4.7%)     124973(  5.5%)     141691(  6.2%)
+  1719     107325(  4.7%)     124953(  5.5%)     141665(  6.2%)
+  1720     107300(  4.7%)     124928(  5.5%)     141638(  6.2%)
+  1721     107278(  4.7%)     124905(  5.5%)     141611(  6.2%)
+  1722     107214(  4.7%)     124844(  5.5%)     141551(  6.2%)
+  1723     107180(  4.7%)     124812(  5.5%)     141512(  6.2%)
+  1724     107149(  4.7%)     124782(  5.5%)     141483(  6.2%)
+  1725     107115(  4.7%)     124754(  5.5%)     141460(  6.2%)
+  1726     107087(  4.7%)     124741(  5.5%)     141440(  6.2%)
+  1727     107044(  4.7%)     124702(  5.5%)     141401(  6.2%)
+  1728     106999(  4.7%)     124671(  5.5%)     141373(  6.2%)
+  1729     106943(  4.7%)     124623(  5.5%)     141328(  6.2%)
+  1730     106895(  4.7%)     124589(  5.5%)     141285(  6.2%)
+  1731     106854(  4.7%)     124552(  5.5%)     141256(  6.2%)
+  1732     106793(  4.7%)     124503(  5.5%)     141194(  6.2%)
+  1733     106734(  4.7%)     124457(  5.5%)     141133(  6.2%)
+  1734     106653(  4.7%)     124359(  5.5%)     141037(  6.2%)
+  1735     106225(  4.7%)     123906(  5.5%)     140565(  6.2%)
+  1736     105867(  4.7%)     123526(  5.4%)     140148(  6.2%)
+  1737     105044(  4.6%)     122625(  5.4%)     139204(  6.1%)
+  1738     104005(  4.6%)     121468(  5.3%)     138006(  6.1%)
+  1739     102621(  4.5%)     119960(  5.3%)     136425(  6.0%)
+  1740     102173(  4.5%)     119411(  5.3%)     135791(  6.0%)
+  1741     101901(  4.5%)     119069(  5.2%)     135374(  6.0%)
+  1742     101264(  4.5%)     118344(  5.2%)     134583(  5.9%)
+  1743     100251(  4.4%)     117196(  5.2%)     133360(  5.9%)
+  1744      99124(  4.4%)     115947(  5.1%)     132006(  5.8%)
+  1745      98752(  4.3%)     115475(  5.1%)     131406(  5.8%)
+  1746      97934(  4.3%)     114524(  5.0%)     130361(  5.7%)
+  1747      95663(  4.2%)     112064(  4.9%)     127787(  5.6%)
+  1748      95188(  4.2%)     111429(  4.9%)     127042(  5.6%)
+  1749      94953(  4.2%)     111097(  4.9%)     126633(  5.6%)
+  1750      94565(  4.2%)     110628(  4.9%)     126113(  5.6%)
+  1751      94457(  4.2%)     110478(  4.9%)     125900(  5.5%)
+  1752      94360(  4.2%)     110358(  4.9%)     125735(  5.5%)
+  1753      94321(  4.2%)     110294(  4.9%)     125641(  5.5%)
+  1754      94286(  4.2%)     110242(  4.9%)     125567(  5.5%)
+  1755      94260(  4.1%)     110204(  4.9%)     125515(  5.5%)
+  1756      94239(  4.1%)     110179(  4.9%)     125477(  5.5%)
+  1757      94208(  4.1%)     110138(  4.8%)     125430(  5.5%)
+  1758      94144(  4.1%)     110075(  4.8%)     125366(  5.5%)
+  1759      94130(  4.1%)     110046(  4.8%)     125325(  5.5%)
+  1760      94108(  4.1%)     110031(  4.8%)     125297(  5.5%)
+  1761      94081(  4.1%)     110007(  4.8%)     125270(  5.5%)
+  1762      94070(  4.1%)     109988(  4.8%)     125247(  5.5%)
+  1763      94050(  4.1%)     109968(  4.8%)     125221(  5.5%)
+  1764      94040(  4.1%)     109960(  4.8%)     125209(  5.5%)
+  1765      94024(  4.1%)     109943(  4.8%)     125188(  5.5%)
+  1766      94006(  4.1%)     109930(  4.8%)     125172(  5.5%)
+  1767      93971(  4.1%)     109895(  4.8%)     125129(  5.5%)
+  1768      93947(  4.1%)     109863(  4.8%)     125104(  5.5%)
+  1769      93922(  4.1%)     109828(  4.8%)     125076(  5.5%)
+  1770      93905(  4.1%)     109809(  4.8%)     125059(  5.5%)
+  1771      93890(  4.1%)     109798(  4.8%)     125050(  5.5%)
+  1772      93876(  4.1%)     109783(  4.8%)     125030(  5.5%)
+  1773      93857(  4.1%)     109767(  4.8%)     125001(  5.5%)
+  1774      93851(  4.1%)     109752(  4.8%)     124991(  5.5%)
+  1775      93830(  4.1%)     109726(  4.8%)     124968(  5.5%)
+  1776      93813(  4.1%)     109705(  4.8%)     124948(  5.5%)
+  1777      93794(  4.1%)     109677(  4.8%)     124930(  5.5%)
+  1778      93777(  4.1%)     109662(  4.8%)     124904(  5.5%)
+  1779      93763(  4.1%)     109643(  4.8%)     124879(  5.5%)
+  1780      93738(  4.1%)     109623(  4.8%)     124851(  5.5%)
+  1781      93714(  4.1%)     109597(  4.8%)     124819(  5.5%)
+  1782      93687(  4.1%)     109565(  4.8%)     124784(  5.5%)
+  1783      93653(  4.1%)     109527(  4.8%)     124749(  5.5%)
+  1784      93631(  4.1%)     109503(  4.8%)     124724(  5.5%)
+  1785      93611(  4.1%)     109484(  4.8%)     124705(  5.5%)
+  1786      93588(  4.1%)     109468(  4.8%)     124681(  5.5%)
+  1787      93566(  4.1%)     109453(  4.8%)     124662(  5.5%)
+  1788      93549(  4.1%)     109436(  4.8%)     124645(  5.5%)
+  1789      93535(  4.1%)     109417(  4.8%)     124635(  5.5%)
+  1790      93512(  4.1%)     109397(  4.8%)     124622(  5.5%)
+  1791      93488(  4.1%)     109375(  4.8%)     124601(  5.5%)
+  1792      93469(  4.1%)     109357(  4.8%)     124570(  5.5%)
+  1793      93449(  4.1%)     109336(  4.8%)     124557(  5.5%)
+  1794      93433(  4.1%)     109319(  4.8%)     124538(  5.5%)
+  1795      93410(  4.1%)     109292(  4.8%)     124517(  5.5%)
+  1796      93383(  4.1%)     109261(  4.8%)     124485(  5.5%)
+  1797      93347(  4.1%)     109233(  4.8%)     124450(  5.5%)
+  1798      93312(  4.1%)     109185(  4.8%)     124401(  5.5%)
+  1799      93250(  4.1%)     109108(  4.8%)     124317(  5.5%)
+  1800      92387(  4.1%)     108191(  4.8%)     123367(  5.4%)
+  1801      92188(  4.1%)     107942(  4.8%)     123090(  5.4%)
+  1802      92125(  4.1%)     107855(  4.7%)     122991(  5.4%)
+  1803      92083(  4.1%)     107811(  4.7%)     122939(  5.4%)
+  1804      92069(  4.1%)     107779(  4.7%)     122909(  5.4%)
+  1805      92058(  4.1%)     107757(  4.7%)     122882(  5.4%)
+  1806      92039(  4.1%)     107736(  4.7%)     122858(  5.4%)
+  1807      92028(  4.1%)     107719(  4.7%)     122838(  5.4%)
+  1808      92012(  4.1%)     107702(  4.7%)     122818(  5.4%)
+  1809      91996(  4.1%)     107679(  4.7%)     122795(  5.4%)
+  1810      91977(  4.0%)     107654(  4.7%)     122773(  5.4%)
+  1811      91966(  4.0%)     107636(  4.7%)     122760(  5.4%)
+  1812      91949(  4.0%)     107622(  4.7%)     122743(  5.4%)
+  1813      91925(  4.0%)     107603(  4.7%)     122723(  5.4%)
+  1814      91908(  4.0%)     107586(  4.7%)     122699(  5.4%)
+  1815      91891(  4.0%)     107572(  4.7%)     122689(  5.4%)
+  1816      91872(  4.0%)     107547(  4.7%)     122667(  5.4%)
+  1817      91853(  4.0%)     107532(  4.7%)     122643(  5.4%)
+  1818      91831(  4.0%)     107509(  4.7%)     122619(  5.4%)
+  1819      91817(  4.0%)     107491(  4.7%)     122602(  5.4%)
+  1820      91799(  4.0%)     107470(  4.7%)     122583(  5.4%)
+  1821      91789(  4.0%)     107458(  4.7%)     122569(  5.4%)
+  1822      91765(  4.0%)     107435(  4.7%)     122546(  5.4%)
+  1823      91747(  4.0%)     107415(  4.7%)     122527(  5.4%)
+  1824      91729(  4.0%)     107398(  4.7%)     122508(  5.4%)
+  1825      91682(  4.0%)     107358(  4.7%)     122465(  5.4%)
+  1826      91665(  4.0%)     107339(  4.7%)     122441(  5.4%)
+  1827      91646(  4.0%)     107322(  4.7%)     122420(  5.4%)
+  1828      91631(  4.0%)     107305(  4.7%)     122398(  5.4%)
+  1829      91604(  4.0%)     107269(  4.7%)     122371(  5.4%)
+  1830      91515(  4.0%)     107175(  4.7%)     122275(  5.4%)
+  1831      91479(  4.0%)     107132(  4.7%)     122233(  5.4%)
+  1832      91461(  4.0%)     107111(  4.7%)     122212(  5.4%)
+  1833      91438(  4.0%)     107084(  4.7%)     122179(  5.4%)
+  1834      91426(  4.0%)     107073(  4.7%)     122162(  5.4%)
+  1835      91405(  4.0%)     107055(  4.7%)     122135(  5.4%)
+  1836      91385(  4.0%)     107033(  4.7%)     122116(  5.4%)
+  1837      91372(  4.0%)     107013(  4.7%)     122102(  5.4%)
+  1838      91354(  4.0%)     106998(  4.7%)     122080(  5.4%)
+  1839      91333(  4.0%)     106980(  4.7%)     122057(  5.4%)
+  1840      91316(  4.0%)     106964(  4.7%)     122038(  5.4%)
+  1841      91299(  4.0%)     106944(  4.7%)     122022(  5.4%)
+  1842      91276(  4.0%)     106916(  4.7%)     121997(  5.4%)
+  1843      91256(  4.0%)     106898(  4.7%)     121980(  5.4%)
+  1844      91237(  4.0%)     106875(  4.7%)     121955(  5.4%)
+  1845      91207(  4.0%)     106845(  4.7%)     121926(  5.4%)
+  1846      91188(  4.0%)     106824(  4.7%)     121904(  5.4%)
+  1847      91167(  4.0%)     106799(  4.7%)     121883(  5.4%)
+  1848      91146(  4.0%)     106778(  4.7%)     121859(  5.4%)
+  1849      91114(  4.0%)     106750(  4.7%)     121825(  5.4%)
+  1850      91096(  4.0%)     106728(  4.7%)     121806(  5.4%)
+  1851      91063(  4.0%)     106697(  4.7%)     121768(  5.4%)
+  1852      90883(  4.0%)     106508(  4.7%)     121579(  5.4%)
+  1853      90805(  4.0%)     106410(  4.7%)     121480(  5.3%)
+  1854      90762(  4.0%)     106351(  4.7%)     121419(  5.3%)
+  1855      90661(  4.0%)     106238(  4.7%)     121303(  5.3%)
+  1856      90601(  4.0%)     106176(  4.7%)     121235(  5.3%)
+  1857      90542(  4.0%)     106105(  4.7%)     121163(  5.3%)
+  1858      90528(  4.0%)     106081(  4.7%)     121129(  5.3%)
+  1859      90512(  4.0%)     106069(  4.7%)     121114(  5.3%)
+  1860      90470(  4.0%)     106024(  4.7%)     121066(  5.3%)
+  1861      90440(  4.0%)     105993(  4.7%)     121034(  5.3%)
+  1862      90386(  4.0%)     105952(  4.7%)     120990(  5.3%)
+  1863      90339(  4.0%)     105925(  4.7%)     120959(  5.3%)
+  1864      90261(  4.0%)     105879(  4.7%)     120917(  5.3%)
+  1865      90211(  4.0%)     105842(  4.7%)     120886(  5.3%)
+  1866      90162(  4.0%)     105789(  4.7%)     120838(  5.3%)
+  1867      90121(  4.0%)     105745(  4.7%)     120798(  5.3%)
+  1868      90035(  4.0%)     105693(  4.7%)     120754(  5.3%)
+  1869      89941(  4.0%)     105611(  4.6%)     120662(  5.3%)
+  1870      89808(  4.0%)     105529(  4.6%)     120581(  5.3%)
+  1871      89711(  3.9%)     105436(  4.6%)     120493(  5.3%)
+  1872      89639(  3.9%)     105362(  4.6%)     120421(  5.3%)
+  1873      89569(  3.9%)     105285(  4.6%)     120340(  5.3%)
+  1874      89494(  3.9%)     105199(  4.6%)     120246(  5.3%)
+  1875      89384(  3.9%)     105071(  4.6%)     120098(  5.3%)
+  1876      89243(  3.9%)     104907(  4.6%)     119919(  5.3%)
+  1877      89054(  3.9%)     104696(  4.6%)     119684(  5.3%)
+  1878      88791(  3.9%)     104379(  4.6%)     119317(  5.3%)
+  1879      87547(  3.9%)     102963(  4.5%)     117799(  5.2%)
+  1880      86457(  3.8%)     101583(  4.5%)     116237(  5.1%)
+  1881      78183(  3.4%)      92671(  4.1%)     106987(  4.7%)
+  1882      76134(  3.4%)      90070(  4.0%)     104044(  4.6%)
+  1883      75069(  3.3%)      88656(  3.9%)     102384(  4.5%)
+  1884      74634(  3.3%)      88021(  3.9%)     101580(  4.5%)
+  1885      74424(  3.3%)      87694(  3.9%)     101145(  4.5%)
+  1886      74316(  3.3%)      87535(  3.9%)     100917(  4.4%)
+  1887      74226(  3.3%)      87420(  3.8%)     100764(  4.4%)
+  1888      74132(  3.3%)      87291(  3.8%)     100618(  4.4%)
+  1889      73618(  3.2%)      86740(  3.8%)     100039(  4.4%)
+  1890      73519(  3.2%)      86600(  3.8%)      99870(  4.4%)
+  1891      73456(  3.2%)      86531(  3.8%)      99775(  4.4%)
+  1892      73422(  3.2%)      86489(  3.8%)      99722(  4.4%)
+  1893      73380(  3.2%)      86435(  3.8%)      99647(  4.4%)
+  1894      73241(  3.2%)      86272(  3.8%)      99483(  4.4%)
+  1895      73191(  3.2%)      86197(  3.8%)      99405(  4.4%)
+  1896      72864(  3.2%)      85855(  3.8%)      99053(  4.4%)
+  1897      72766(  3.2%)      85738(  3.8%)      98918(  4.4%)
+  1898      72585(  3.2%)      85529(  3.8%)      98692(  4.3%)
+  1899      72207(  3.2%)      85109(  3.7%)      98259(  4.3%)
+  1900      71994(  3.2%)      84871(  3.7%)      97993(  4.3%)
+  1901      71938(  3.2%)      84801(  3.7%)      97904(  4.3%)
+  1902      71804(  3.2%)      84645(  3.7%)      97724(  4.3%)
+  1903      71357(  3.1%)      84164(  3.7%)      97217(  4.3%)
+  1904      71032(  3.1%)      83801(  3.7%)      96830(  4.3%)
+  1905      70912(  3.1%)      83650(  3.7%)      96658(  4.3%)
+  1906      70861(  3.1%)      83584(  3.7%)      96576(  4.3%)
+  1907      70823(  3.1%)      83536(  3.7%)      96514(  4.2%)
+  1908      70763(  3.1%)      83460(  3.7%)      96432(  4.2%)
+  1909      70699(  3.1%)      83387(  3.7%)      96342(  4.2%)
+  1910      70624(  3.1%)      83300(  3.7%)      96253(  4.2%)
+  1911      70565(  3.1%)      83230(  3.7%)      96173(  4.2%)
+  1912      70520(  3.1%)      83167(  3.7%)      96106(  4.2%)
+  1913      70435(  3.1%)      83068(  3.7%)      96001(  4.2%)
+  1914      70388(  3.1%)      83012(  3.7%)      95943(  4.2%)
+  1915      70330(  3.1%)      82950(  3.7%)      95871(  4.2%)
+  1916      70286(  3.1%)      82894(  3.6%)      95804(  4.2%)
+  1917      70253(  3.1%)      82857(  3.6%)      95760(  4.2%)
+  1918      70225(  3.1%)      82831(  3.6%)      95729(  4.2%)
+  1919      70200(  3.1%)      82805(  3.6%)      95698(  4.2%)
+  1920      70180(  3.1%)      82782(  3.6%)      95672(  4.2%)
+  1921      70134(  3.1%)      82732(  3.6%)      95619(  4.2%)
+  1922      70107(  3.1%)      82701(  3.6%)      95577(  4.2%)
+  1923      70022(  3.1%)      82610(  3.6%)      95487(  4.2%)
+  1924      69977(  3.1%)      82570(  3.6%)      95437(  4.2%)
+  1925      69955(  3.1%)      82543(  3.6%)      95408(  4.2%)
+  1926      69932(  3.1%)      82523(  3.6%)      95389(  4.2%)
+  1927      69920(  3.1%)      82506(  3.6%)      95376(  4.2%)
+  1928      69873(  3.1%)      82466(  3.6%)      95331(  4.2%)
+  1929      69855(  3.1%)      82440(  3.6%)      95302(  4.2%)
+  1930      69833(  3.1%)      82421(  3.6%)      95276(  4.2%)
+  1931      69812(  3.1%)      82402(  3.6%)      95254(  4.2%)
+  1932      69793(  3.1%)      82379(  3.6%)      95229(  4.2%)
+  1933      69780(  3.1%)      82363(  3.6%)      95211(  4.2%)
+  1934      69744(  3.1%)      82327(  3.6%)      95174(  4.2%)
+  1935      69724(  3.1%)      82301(  3.6%)      95143(  4.2%)
+  1936      69704(  3.1%)      82280(  3.6%)      95128(  4.2%)
+  1937      69686(  3.1%)      82256(  3.6%)      95103(  4.2%)
+  1938      69675(  3.1%)      82241(  3.6%)      95092(  4.2%)
+  1939      69659(  3.1%)      82227(  3.6%)      95079(  4.2%)
+  1940      69648(  3.1%)      82213(  3.6%)      95065(  4.2%)
+  1941      69631(  3.1%)      82196(  3.6%)      95049(  4.2%)
+  1942      69620(  3.1%)      82185(  3.6%)      95035(  4.2%)
+  1943      69602(  3.1%)      82163(  3.6%)      95009(  4.2%)
+  1944      69595(  3.1%)      82152(  3.6%)      94995(  4.2%)
+  1945      69588(  3.1%)      82137(  3.6%)      94981(  4.2%)
+  1946      69577(  3.1%)      82126(  3.6%)      94970(  4.2%)
+  1947      69562(  3.1%)      82106(  3.6%)      94948(  4.2%)
+  1948      69549(  3.1%)      82089(  3.6%)      94936(  4.2%)
+  1949      69536(  3.1%)      82077(  3.6%)      94921(  4.2%)
+  1950      69522(  3.1%)      82064(  3.6%)      94902(  4.2%)
+  1951      69511(  3.1%)      82047(  3.6%)      94884(  4.2%)
+  1952      69501(  3.1%)      82032(  3.6%)      94865(  4.2%)
+  1953      69483(  3.1%)      82017(  3.6%)      94848(  4.2%)
+  1954      69465(  3.1%)      81998(  3.6%)      94830(  4.2%)
+  1955      69438(  3.1%)      81967(  3.6%)      94800(  4.2%)
+  1956      69415(  3.1%)      81942(  3.6%)      94773(  4.2%)
+  1957      69403(  3.1%)      81926(  3.6%)      94755(  4.2%)
+  1958      69335(  3.1%)      81852(  3.6%)      94675(  4.2%)
+  1959      69315(  3.1%)      81822(  3.6%)      94637(  4.2%)
+  1960      69296(  3.1%)      81796(  3.6%)      94609(  4.2%)
+  1961      69268(  3.0%)      81778(  3.6%)      94588(  4.2%)
+  1962      69255(  3.0%)      81756(  3.6%)      94567(  4.2%)
+  1963      69238(  3.0%)      81741(  3.6%)      94551(  4.2%)
+  1964      69222(  3.0%)      81722(  3.6%)      94543(  4.2%)
+  1965      69203(  3.0%)      81702(  3.6%)      94528(  4.2%)
+  1966      69193(  3.0%)      81693(  3.6%)      94513(  4.2%)
+  1967      69182(  3.0%)      81681(  3.6%)      94497(  4.2%)
+  1968      69163(  3.0%)      81666(  3.6%)      94478(  4.2%)
+  1969      69155(  3.0%)      81658(  3.6%)      94465(  4.2%)
+  1970      69148(  3.0%)      81650(  3.6%)      94455(  4.2%)
+  1971      69141(  3.0%)      81637(  3.6%)      94448(  4.2%)
+  1972      69131(  3.0%)      81627(  3.6%)      94442(  4.2%)
+  1973      69127(  3.0%)      81618(  3.6%)      94432(  4.2%)
+  1974      69118(  3.0%)      81608(  3.6%)      94417(  4.2%)
+  1975      69104(  3.0%)      81595(  3.6%)      94405(  4.2%)
+  1976      69093(  3.0%)      81579(  3.6%)      94389(  4.2%)
+  1977      69085(  3.0%)      81570(  3.6%)      94376(  4.2%)
+  1978      69079(  3.0%)      81561(  3.6%)      94371(  4.2%)
+  1979      69066(  3.0%)      81552(  3.6%)      94359(  4.2%)
+  1980      69052(  3.0%)      81536(  3.6%)      94341(  4.2%)
+  1981      69035(  3.0%)      81519(  3.6%)      94318(  4.2%)
+  1982      69023(  3.0%)      81510(  3.6%)      94308(  4.2%)
+  1983      69012(  3.0%)      81494(  3.6%)      94293(  4.2%)
+  1984      68998(  3.0%)      81480(  3.6%)      94274(  4.2%)
+  1985      68981(  3.0%)      81471(  3.6%)      94255(  4.1%)
+  1986      68969(  3.0%)      81455(  3.6%)      94241(  4.1%)
+  1987      68951(  3.0%)      81432(  3.6%)      94226(  4.1%)
+  1988      68942(  3.0%)      81425(  3.6%)      94218(  4.1%)
+  1989      68928(  3.0%)      81408(  3.6%)      94203(  4.1%)
+  1990      68917(  3.0%)      81396(  3.6%)      94188(  4.1%)
+  1991      68898(  3.0%)      81383(  3.6%)      94176(  4.1%)
+  1992      68878(  3.0%)      81369(  3.6%)      94160(  4.1%)
+  1993      68861(  3.0%)      81348(  3.6%)      94142(  4.1%)
+  1994      68847(  3.0%)      81327(  3.6%)      94117(  4.1%)
+  1995      68835(  3.0%)      81313(  3.6%)      94101(  4.1%)
+  1996      68824(  3.0%)      81298(  3.6%)      94086(  4.1%)
+  1997      68808(  3.0%)      81285(  3.6%)      94065(  4.1%)
+  1998      68799(  3.0%)      81271(  3.6%)      94055(  4.1%)
+  1999      68782(  3.0%)      81250(  3.6%)      94033(  4.1%)
+  2000      68762(  3.0%)      81235(  3.6%)      94013(  4.1%)
+
+====== Sbatch log ========
+
+JobId=56553255 JobName=eestat2
+   UserId=benucci(833945) GroupId=psm(2198) MCS_label=N/A
+   Priority=66671 Nice=0 Account=colej QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:15:16 TimeLimit=06:00:00 TimeMin=N/A
+   SubmitTime=2022-06-22T14:57:25 EligibleTime=2022-06-22T14:57:25
+   AccrueTime=2022-06-22T14:57:25
+   StartTime=2022-06-22T14:58:23 EndTime=2022-06-22T20:58:23 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2022-06-22T14:58:23 Scheduler=Main
+   Partition=colej AllocNode:Sid=dev-intel18:30281
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=amr-120
+   BatchHost=amr-120
+   NumNodes=1 NumCPUs=40 NumTasks=2 CPUs/Task=20 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=40,mem=32G,node=1,billing=4980
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=20 MinMemoryNode=32G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|amr|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-150/benucci/Amplicon-PacBio/pipeline/7_eestat2Usearch.sb
+   WorkDir=/mnt/ufs18/home-150/benucci/Amplicon-PacBio/pipeline
+   Comment=stdout=/mnt/ufs18/home-150/benucci/Amplicon-PacBio/pipeline/slurm-56553255.out 
+   StdErr=/mnt/ufs18/home-150/benucci/Amplicon-PacBio/pipeline/slurm-56553255.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-150/benucci/Amplicon-PacBio/pipeline/slurm-56553255.out
+   Power=
+   
+

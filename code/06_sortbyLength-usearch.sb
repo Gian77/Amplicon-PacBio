@@ -1,0 +1,64 @@
+#!/bin/bash --login
+
+#SBATCH --time=00:59:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=64
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+echo -e "\n========== Sub-directories ==========\n"
+echo -e "\n==== Paths, variables, links ====\n"
+echo -e "mkdir $project_dir/output/04_sortbyLength"
+mkdir $project_dir/output/04_sortbyLength
+
+cat $project_dir/output/03_labeled/mmprnt* > $project_dir/output/03_labeled/pooled.fastq 
+
+echo -e "\n========= usearch, sort by length =========\n"
+# resorting sequences untill the $length I want to trim at
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+	-sortbylength $project_dir/output/03_labeled/pooled.fastq \
+	-maxseqlength $max_length \
+	-fastqout $project_dir/output/04_sortbyLength/sorted.fastq
+
+# trimming reads at $length
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+	-fastx_truncate $project_dir/output/03_labeled/pooled.fastq \
+	-trunclen $max_length \
+	-fastqout $project_dir/output/04_sortbyLength/truncated.fastq
+
+# merging the results together
+cat $project_dir/output/04_sortbyLength/sorted.fastq \
+$project_dir/output/04_sortbyLength/truncated.fastq > $project_dir/output/04_sortbyLength//subset.fastq
+
+# To filter read shorted than 1000 I can then use -minseqlength
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+	-sortbylength $project_dir/output/04_sortbyLength/subset.fastq \
+	-minseqlength $min_length \
+	-fastqout $project_dir/output/04_sortbyLength/exact.fastq
+
+echo -e "\n========= Read distribution, R =========\n"
+# Quick plot of read distribution
+cat $project_dir/output/04_sortbyLength/exact.fastq | awk '{if(NR%4==2) print length($1)}' | sort -n | uniq -c > $project_dir/output/04_sortbyLength/readhisto.txt
+
+conda activate R
+cd $project_dir/output/04_sortbyLength/
+Rscript $project_dir/code/histo.R
+conda deactivate
+
+mv $project_dir/code/*.pdf $project_dir/output/04_sortbyLength/
+
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+echo -e "\n `sacct -u benucci -j $SLURM_JOB_ID --format=JobID,JobName,Start,End,Elapsed,NCPUS` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/04_sortbyLength-usearch.slurm
+rm $project_dir/code/slurm*

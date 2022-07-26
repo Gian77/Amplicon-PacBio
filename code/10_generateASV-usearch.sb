@@ -1,0 +1,48 @@
+#!/bin/bash --login
+
+#SBATCH --time=02:59:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=64
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+echo -e "\n========== Sub-directories ==========\n"
+
+echo -e "\n==== Paths,directories and links ====\n"
+echo -e "mkdir $project_dir/outputs/06_asv_unoise3"
+mkdir $project_dir/outputs/06_asv_unoise3
+
+echo -e "\n======= asv, unoise3 ========\n"
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+	-threads $cores \
+	-fastx_uniques $project_dir/outputs/05_xtracted_reads/filtered.fastq \
+	-fastqout $project_dir/outputs/06_asv_unoise3/uniques.fastq \
+	-sizeout
+
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+	-threads $cores \
+	-unoise3 $project_dir/outputs/06_asv_unoise3/uniques.fastq \
+	-tabbedout $project_dir/outputs/06_asv_unoise3/unoise3.txt \
+	-zotus $project_dir/outputs/06_asv_unoise3/asv.fasta
+
+/mnt/research/rdp/public/thirdParty/usearch11.0.667_i86linux64 \
+	-threads $cores \
+	-otutab $project_dir/outputs/03_labeled/pooled.fastq \
+	-zotus $project_dir/outputs/06_asv_unoise3/asv.fasta \
+	-otutabout $project_dir/outputs/06_asv_unoise3/asv_otu_table.txt
+
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+echo -e "\n `sacct -u benucci -j $SLURM_JOB_ID --format=JobID,JobName,Start,End,Elapsed,NCPUS` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/10_generateASV-usearch.slurm
+rm $project_dir/code/slurm*

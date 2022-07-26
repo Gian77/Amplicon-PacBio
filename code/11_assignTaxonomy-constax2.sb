@@ -1,0 +1,48 @@
+##!/bin/bash --login
+
+#SBATCH --time=01:59:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=64
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+echo -e "\n========== Sub-directories ==========\n"
+echo -e "\n========== CONSTAX2 ==========\n"
+
+conda activate CTAX2
+
+/mnt/research/bonito_lab/CONSTAX_May2020/constax.sh \
+    --num_threads $cores \
+    --mem $RAM_CPU \
+    --db $euk_db \
+    --input $project_dir/outputs/06_asv_unoise3/asv.fasta \
+    --isolates $isolates_db \
+    --isolates_query_coverage=97 \
+    --isolates_percent_identity=97 \
+    --high_level_db $euk_db \
+    --high_level_query_coverage=60 \
+    --high_level_percent_identity=60 \
+    --trainfile $train_files \
+    --tax $project_dir/outputs/07_taxonomy_constax2/ \
+    --output $project_dir/outputs/07_taxonomy_constax2/ \
+    --conf 0.7 \
+    --blast \
+    --msu_hpcc
+
+conda deactivate
+
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+echo -e "\n `sacct -u benucci -j $SLURM_JOB_ID --format=JobID,JobName,Start,End,Elapsed,NCPUS` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/07_assignTaxonomy-constax2.slurm
+rm $project_dir/code/slurm*

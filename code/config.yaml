@@ -1,0 +1,17 @@
+# Config file for genome-pipe-bac-pb
+project_dir="/mnt/home/benucci/Amplicon-PacBio/"
+cd $project_dir
+
+# Databases
+euk_db="/mnt/home/benucci/DATABASES/EUKARYOTES/sh_general_dynamic_euk_10052021_dev.fasta"
+isolates_db="/mnt/home/benucci/CONSTAX_v2/isolates_bonitolab2021.fasta"
+train_files="/mnt/home/benucci/DATABASES/EUKARYOTES/trainingfiles_general_dynamic_euk_10052021_dev/"
+
+# Primers
+fwd_primer="TATYGYTCTTNAACGAGGAATC" # amf forward primer
+rev_primer="AACACTCGCAYAYATGYTAGA" # amf reverse primer
+rev_primer_RC="TCTARCATRTRTGCGAGTGTT"
+
+# Seqeunces lengths
+max_length=1600
+min_length=1400

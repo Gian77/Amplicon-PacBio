@@ -1,0 +1,52 @@
+#!/bin/bash --login
+
+#SBATCH --time=00:15:00 
+#SBATCH --nodes=1       
+#SBATCH --ntasks=1 
+#SBATCH --cpus-per-task=4
+#SBATCH --mem-per-cpu=4G  
+#SBATCH --job-name archive
+#SBACTH -A shade-cole-bonito
+
+cd ${SLURM_SUBMIT_DIR}
+cores="$SLURM_CPUS_PER_TASK"
+RAM_CPU="$SLURM_MEM_PER_CPU"
+
+echo -e "\n========== Project paths ==========\n"
+source config.yaml
+
+cho -e "\n========== Sub-directories ==========\n"
+echo -e "mkdir $project_dir/outputs/01_data_fastq/"
+mkdir $project_dir/outputs/01_data_fastq/
+echo -e "cd $project_dir/outputs/01_data_fastq/"
+cd $project_dir/outputs/01_data_fastq/
+
+echo -e "\n====== Convert .bam to .fastq =====\n"
+echo -e "\n====== bbmap =====\n"
+# Convert files using bbmap. Quality form PAcbio reads is recoded into illumina standards
+# Have a look here: https://www.seqanswers.com/forum/sequencing-technologies-companies/pacific-biosciences/42623-pac-bio-fastq-file-quality-score-encoding?t=48036
+
+conda activate bbmap
+echo -e "\nbbmap version: `bbmap --version`\n" 
+for file in *.bam
+do
+   reformat.sh in=$file out=${file%.*}.fastq
+done
+conda deactivate bbmap
+
+echo -e "\n====== Read counts =====\n"
+# save read counts into file using echo -e and the \t to divide columns.
+for i in *.fastq
+   do 
+   echo -e "$i\t`grep -c "^+$" $i`"
+done > $project_dir/outputs/01_data_fastq/readCounts.txt
+
+# add headers.
+sed -i '1i Name\tCounts' $project_dir/outputs/01_data_fastq/readCounts.txt
+
+echo -e "\n========== Sbatch log ==========\n"
+echo -e "\n Current directory: `pwd` \n"
+echo -e "\n `sacct -u benucci -j $SLURM_JOB_ID --format=JobID,JobName,Start,End,Elapsed,NCPUS` \n"
+scontrol show job $SLURM_JOB_ID
+cp $project_dir/code/slurm* $project_dir/slurms/01_convertBam-bbmap.slurm
+rm $project_dir/code/slurm*
